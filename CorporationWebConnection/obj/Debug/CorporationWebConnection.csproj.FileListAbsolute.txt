@@ -1,0 +1,12 @@
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\bin\Debug\CorporationWebConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\bin\Debug\CorporationWebConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\CorporationWebConnection\bin\Debug\CorporationWebConnection.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\CorporationWebConnection\bin\Debug\CorporationWebConnection.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.csprojAssemblyReference.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.csproj.CoreCompileInputs.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Debug\CorporationWebConnection.csprojAssemblyReference.cache

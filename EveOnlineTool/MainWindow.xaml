@@ -1,0 +1,84 @@
+﻿<Window x:Class="EveOnlineIndustrialist.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EveOnlineIndustrialist"
+        xmlns:userinterface="clr-namespace:EveOnlineTool.UserInterface"
+        xmlns:industry="clr-namespace:EveOnlineTool.UserInterface.Industry"
+        xmlns:market="clr-namespace:EveOnlineTool.UserInterface.Market"
+        xmlns:settings="clr-namespace:EveOnlineTool.UserInterface.Settings"
+        xmlns:hauling="clr-namespace:EveOnlineTool.UserInterface.Hauling"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        d:DesignHeight="768" 
+        d:DesignWidth="1024"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="Eve Online Industrialist">
+    <DockPanel LastChildFill="True">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Datei" >
+                <MenuItem Header="Beenden" Click="MenuItem_ExitClick" />
+            </MenuItem>
+            <MenuItem Header="?" >
+                <MenuItem Header="Über" />
+            </MenuItem>
+        </Menu>
+        <StatusBar Name="StatusBar" DockPanel.Dock="Bottom">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="100" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem>
+                <TextBlock Name="UsernameTextBlock" />
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="2">
+                <TextBlock Name="AutoUpdaterStatusTextBlock" />
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="3">
+                <ProgressBar Name="AutoUpdaterProgressBar" Width="90" Height="16" />
+            </StatusBarItem>
+        </StatusBar>
+        <TabControl TabStripPlacement="Left" Margin="10">
+            <TabItem Header="Dashboard" IsEnabled="False">
+                <userinterface:Dashboard />
+            </TabItem>
+            <TabItem Header="Assets" IsEnabled="True">
+                <userinterface:AssetsControl />
+            </TabItem>
+            <TabItem Header="Industrie" IsEnabled="False">
+            </TabItem>
+            <TabItem Header="Blueprints" Margin="10,0,0,0" IsSelected="True">
+                <industry:BlueprintsControl CreateContractRequested="CreateIndustryContractRequested" />
+            </TabItem>
+            <TabItem Header="Forschung" Margin="10,0,0,0" IsEnabled="False">
+                <industry:ContractsControl />
+            </TabItem>
+            <TabItem Name="IndustryContractsTabItem" Header="Aufträge" Margin="10,0,0,0">
+                <industry:ContractsControl x:Name="IndustryContractsControl" />
+            </TabItem>
+            <TabItem Header="Markt" IsEnabled="False">
+                <market:Market />
+            </TabItem>
+            <TabItem Header="Transport" IsEnabled="False">
+            </TabItem>
+            <TabItem Header="Aufträge" Margin="10,0,0,0" IsEnabled="False">
+                <hauling:HaulingContractsControl />
+            </TabItem>
+            <TabItem Header="Einstellungen">
+                <settings:SettingsControl />
+            </TabItem>
+            <TabItem Header="Benutzer Verwaltung" Margin="10,0,0,0" Padding="10,2,20,2">
+                <settings:UserManagement />
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>

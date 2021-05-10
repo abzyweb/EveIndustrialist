@@ -1,0 +1,14 @@
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\EoiData.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\EoiData.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\CorporationWebConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\EveSwaggerConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\YamlDotNet.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\EveSwaggerConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\EveSwaggerConnection.dll.config
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\CorporationWebConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Release\YamlDotNet.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Release\EoiData.csprojAssemblyReference.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Release\EoiData.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Release\EoiData.csproj.CopyComplete
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Release\EoiData.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Release\EoiData.pdb

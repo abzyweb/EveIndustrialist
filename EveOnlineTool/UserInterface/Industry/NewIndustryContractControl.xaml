@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="EveOnlineTool.UserInterface.Industry.NewIndustryContractControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EveOnlineTool.UserInterface.Industry"
+             xmlns:controls="clr-namespace:EveOnlineTool.UserInterface.Controls"
+             xmlns:controls1="clr-namespace:System.Windows.Controls;assembly=DotNetProjects.Input.Toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid DataContext="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}}}" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Blueprint" />
+        <controls:BlueprintsComboBox x:Name="BlueprintComboBox" Grid.Column="1" VerticalAlignment="Center" SelectedItem="{Binding Path=Blueprint, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        <Label Content="Auftrags Typ" Grid.Column="2" />
+        <controls:ContractTypeComboBox x:Name="ContractTypeComboBox" Grid.Column="3" VerticalAlignment="Center" SelectedIndex="1" SelectionChanged="ContractTypeChanged" />
+        
+        <Label Grid.Row="1" Grid.Column="2" Content="Material wird geliefert" />
+        <CheckBox Name="MaterialsDeliveredCheckBox" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" IsEnabled="False" />
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Blueprint wird geliefert" />
+        <CheckBox Name="BlueprintDeliveredCheckBox" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" IsEnabled="False" />
+        
+        <GroupBox Grid.Row="2" Grid.ColumnSpan="4" Header="Blueprint Preis Information" Visibility="Visible">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Buy Order Preis / Einheit (Handelshub)" Margin="5" />
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Path=Blueprint.BuyPrice, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="0" Grid.Column="2" Text="Sell Order Preis / Einheit (Handelshub)" Margin="5" />
+                <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding Path=Blueprint.SellPrice, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" VerticalAlignment="Center" />
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Produktionskosten / Einheit" Margin="5" />
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Path=Blueprint.ExpensesPerUnit, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" VerticalAlignment="Center" />
+
+                <TextBlock Grid.Row="1" Grid.Column="2" Text="Empf. Preis / Einheit" Margin="5" />
+                <TextBlock Grid.Row="1" Grid.Column="3" Text="{Binding Path=Blueprint.OptimalPrice, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" VerticalAlignment="Center" />
+                
+                <!--<TextBlock Grid.Row="2" Grid.Column="0" Text="Geschätze Material Kosten" Margin="5" />
+                <TextBlock Grid.Row="2" Grid.Column="1" Text="XXX" VerticalAlignment="Center" />
+                <TextBlock Grid.Row="2" Grid.Column="2" Text="Geschätze Produktions Kosten" Margin="5" />
+                <TextBlock Grid.Row="2" Grid.Column="3" Text="XXX" VerticalAlignment="Center" />
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Empfohlene Preis Spanne" Margin="5" />
+                <TextBlock Grid.Row="3" Grid.Column="1" Text="XXX" VerticalAlignment="Center" />-->
+                
+            </Grid>
+        </GroupBox>
+        
+        <Label Content="Einheiten" Grid.Row="3" Grid.Column="0" />
+        <TextBox Name="OrderVolumeTextBox" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" />
+
+        <Label Content="Preis pro Einheit" Grid.Row="3" Grid.Column="2" />
+        <TextBox Name="PriceTextBox" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" />
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Erstelle SubAufträge" />
+        <CheckBox Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" IsChecked="False" IsEnabled="False" />
+
+        <Label Grid.Row="4" Grid.Column="2" Content="Erlaube Teilaufträge" />
+        <CheckBox Name="EnablePartitionCheckBox" Grid.Row="4" Grid.Column="3" VerticalAlignment="Center" IsChecked="True" />
+        
+        <Label Grid.Row="5" Grid.Column="0" Content="Lieferung" />
+        <CheckBox Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" IsEnabled="False" />
+
+        <Label Grid.Row="5" Grid.Column="2" Content="Station (Lieferung)" />
+        <controls:StationComboBox Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" IsEnabled="False" />
+        <!--<controls1:AutoCompleteBox Grid.Row="5" Grid.Column="3" VerticalAlignment="Center" ItemsSource="{Binding Path=SolarSystems, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />-->
+
+        <Label Grid.Row="6" Grid.Column="0" Content="Anmerkung" />
+        <TextBox Name="DescriptionTextBox" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" />
+
+    </Grid>
+</UserControl>

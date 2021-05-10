@@ -1,0 +1,30 @@
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EoiData.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EoiData.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\YamlDotNet.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\YamlDotNet.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Debug\EoiData.csprojAssemblyReference.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Debug\EoiData.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Debug\EoiData.csproj.CopyComplete
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Debug\EoiData.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\obj\Debug\EoiData.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EveSwaggerConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EveSwaggerConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EveSwaggerConnection.dll.config
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\CorporationWebConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\CorporationWebConnection.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\EoiData.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\EoiData.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\CorporationWebConnection.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\EveSwaggerConnection.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\YamlDotNet.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\EveSwaggerConnection.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\EveSwaggerConnection.dll.config
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\CorporationWebConnection.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\bin\Debug\YamlDotNet.xml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.csprojAssemblyReference.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.csproj.CoreCompileInputs.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.csproj.CopyComplete
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EoiData.dll.CodeAnalysisLog.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EoiData.dll.lastcodeanalysissucceeded

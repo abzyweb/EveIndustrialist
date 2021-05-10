@@ -1,0 +1,17 @@
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe.config
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\YamlDotNet.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\YamlDotNet.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\App.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_MarkupCompile.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_MarkupCompile.lref
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\MainWindow.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.g.resources
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.Properties.Resources.resources
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.exe
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.pdb

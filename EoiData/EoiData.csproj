@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC4BA61E-FDBD-4C20-85A5-E31694339CCF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EoiData</RootNamespace>
+    <AssemblyName>EoiData</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="YamlDotNet, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.5.4.0\lib\net45\YamlDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\ContractStates.cs" />
+    <Compile Include="Constants\ContractType.cs" />
+    <Compile Include="Constants\OrderType.cs" />
+    <Compile Include="Constants\Regions.cs" />
+    <Compile Include="Constants\SolarSystems.cs" />
+    <Compile Include="EoiClasses\EoiAsset.cs" />
+    <Compile Include="EoiClasses\EoiBlueprint.cs" />
+    <Compile Include="EoiClasses\EoiContract.cs" />
+    <Compile Include="EoiClasses\EoiInterface.cs" />
+    <Compile Include="EoiClasses\EoiSolarSystem.cs" />
+    <Compile Include="EoiClasses\EoiType.cs" />
+    <Compile Include="EoiClasses\EoiUser.cs" />
+    <Compile Include="EoiDataClasses\EoiDataBlueprint.cs" />
+    <Compile Include="EoiDataClasses\EoiDataContract.cs" />
+    <Compile Include="EoiDataClasses\EoiDataSolarSystem.cs" />
+    <Compile Include="EoiDataClasses\EoiDataType.cs" />
+    <Compile Include="EoiDataClasses\EoiDataInterface.cs" />
+    <Compile Include="EoiDataClasses\EoiDataUser.cs" />
+    <Compile Include="EoiDataClasses\EoiDataAsset.cs" />
+    <Compile Include="EsiDataClasses\EsiDataBlueprint.cs" />
+    <Compile Include="EsiDataClasses\EsiDataInterface.cs" />
+    <Compile Include="EsiDataClasses\EsiDataMarketHistory.cs" />
+    <Compile Include="EsiDataClasses\EsiDataMarketOrders.cs" />
+    <Compile Include="EsiDataClasses\EsiDataPrice.cs" />
+    <Compile Include="EsiDataClasses\EsiDataSolarSystem.cs" />
+    <Compile Include="EsiDataClasses\EsiDataSolarSystemCostIndices.cs" />
+    <Compile Include="FileSystemDataClasses\FileSystemDataAsset.cs" />
+    <Compile Include="FileSystemDataClasses\FileSystemDataBlueprint.cs" />
+    <Compile Include="FileSystemDataClasses\FileSystemDataContract.cs" />
+    <Compile Include="FileSystemDataClasses\FileSystemDataInterface.cs" />
+    <Compile Include="FileSystemDataClasses\FileSystemDataReader.cs" />
+    <Compile Include="FileSystemDataClasses\FileSystemDataUser.cs" />
+    <Compile Include="Helper\BackgroundWorker.cs" />
+    <Compile Include="Helper\BlueprintCalculator.cs" />
+    <Compile Include="Helper\Logger.cs" />
+    <Compile Include="MarketerDataClasses\MarketerData.cs" />
+    <Compile Include="MarketerDataClasses\MarketerDataInterface.cs" />
+    <Compile Include="MarketerDataClasses\MarketerDataReader.cs" />
+    <Compile Include="MarketerDataClasses\MarketerDataRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings\CalculationSettings.cs" />
+    <Compile Include="Settings\GlobalSettings.cs" />
+    <Compile Include="Settings\SettingsInterface.cs" />
+    <Compile Include="StaticDataClasses\StaticDataBlueprint.cs" />
+    <Compile Include="StaticDataClasses\StaticDataInterface.cs" />
+    <Compile Include="StaticDataClasses\StaticDataReader.cs" />
+    <Compile Include="StaticDataClasses\StaticDataType.cs" />
+    <Compile Include="WebDataClasses\WebDataBlueprint.cs" />
+    <Compile Include="WebDataClasses\WebDataInterface.cs" />
+    <Compile Include="WebDataClasses\WebDataReader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EveSwaggerConnection\EveSwaggerConnection\EveSwaggerConnection.csproj">
+      <Project>{36BF34F4-F215-42DB-AF89-89B1D4FD7848}</Project>
+      <Name>EveSwaggerConnection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CorporationWebConnection\CorporationWebConnection.csproj">
+      <Project>{B04EAAA8-7B17-4E32-A5EA-5B57AADE445C}</Project>
+      <Name>CorporationWebConnection</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

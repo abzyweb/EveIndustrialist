@@ -1,0 +1,6 @@
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\bin\Release\CorporationWebConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\bin\Release\CorporationWebConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Release\CorporationWebConnection.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Release\CorporationWebConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Release\CorporationWebConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\obj\Release\CorporationWebConnection.csprojAssemblyReference.cache

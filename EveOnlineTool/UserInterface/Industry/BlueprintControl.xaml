@@ -1,0 +1,110 @@
+﻿<UserControl x:Class="EveOnlineTool.UserInterface.Industry.BlueprintControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EveOnlineTool.UserInterface.Industry"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid DataContext="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}}}" Margin="5">
+        <GroupBox Grid.Row="1" Header="Blueprint Details">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Content="Name" />
+                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Blueprint, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="1" Grid.Column="0" Content="Besitz" />
+                <CheckBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" IsEnabled="{Binding EnableManualChanges}" IsChecked="{Binding Path=Blueprint.Owned, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="1" Grid.Column="2" Content="Privat (Corp.)" />
+                <CheckBox Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" IsChecked="{Binding Path=Blueprint.Private, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Grid.Row="2" Content="Material Effizienz" />
+                <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" IsEnabled="{Binding EnableManualChanges}" Text="{Binding Path=Blueprint.MaterialEfficency, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource IntToStringConverter}}" />
+
+                <Label Grid.Row="2" Grid.Column="2" Content="Zeit Effizienz" />
+                <TextBox Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" IsEnabled="{Binding EnableManualChanges}" Text="{Binding Path=Blueprint.TimeEfficency, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource IntToStringConverter}}" />
+
+                <Expander ExpandDirection="Down" Grid.Row="3" Grid.ColumnSpan="4" IsExpanded="False" Header="Zusätzliche Informationen" Margin="0,5,0,0" >
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        
+                        <GroupBox Header="Kosten Aufschlüsselung / Durchlauf" Grid.Row="0">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0" Content="Produktionskosten (Basis)" />
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Blueprint.ProductionBaseTaxPerRun, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+
+                                <Label Grid.Column="2" Content="Produktionskosten (Corporation Steuer)" />
+                                <TextBlock Grid.Column="3" VerticalAlignment="Center" Text="{Binding Path=Blueprint.ProductionCorporationTaxPerRun, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+
+                                <Label Grid.Row="1" Content="Material Kosten:" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Blueprint.MaterialExpensesPerRun, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+
+                                <DataGrid Grid.Row="2" Grid.ColumnSpan="4" ItemsSource="{Binding Path=Blueprint.Materials, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" CanUserAddRows="False" IsReadOnly="True" AutoGenerateColumns="False" GridLinesVisibility="Horizontal">
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn Header="Bezeichnung" Binding="{Binding Path=Name, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Width="*" />
+                                        <DataGridTextColumn Header="Anzahl" Binding="{Binding Path=Quantity, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                                        <DataGridTextColumn Header="Preis / Einheit" Binding="{Binding Path=PricePerUnit, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+                                        <DataGridTextColumn Header="Preis" Binding="{Binding Path=Price, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+                                        <DataGridCheckBoxColumn Header="Produziert" Binding="{Binding Path=Produced, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </GroupBox>
+
+                        <GroupBox Header="Einnahmen Aufschlüsselung / Durchlauf" Grid.Row="1">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0" Content="Verkaufs Preis" />
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Blueprint.SalesPricePerRun, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+
+                                <Label Grid.Column="2" Content="Verkaufs Steuer" />
+                                <TextBlock Grid.Column="3" VerticalAlignment="Center" Text="{Binding Path=Blueprint.SalesTaxesPerRun, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+
+                                <Label Grid.Row="1" Grid.Column="0" Content="Broker Gebühren" />
+                                <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Text="{Binding Path=Blueprint.BrokerFeesPerRun, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}" />
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                </Expander>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

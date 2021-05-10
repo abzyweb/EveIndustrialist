@@ -1,0 +1,1376 @@
+-----------------------------------------------------------------------------
+Date : 23.03.2019 11:18:32
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.EsiDataClasses.EsiDataInterface.InitializeSystemCostIndices() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 147.
+   bei EoiData.EsiDataClasses.EsiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 27.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 34.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 21.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 23.03.2019 11:22:05
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.Helper.BlueprintCalculator.Calculate(EoiDataBlueprint blueprint) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BlueprintCalculator.cs:Zeile 66.
+   bei EoiData.EoiDataClasses.EoiDataInterface.CalculateAllBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 294.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 23.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 24.03.2019 07:20:39
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.EsiDataClasses.EsiDataInterface.InitializePrices() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 171.
+   bei EoiData.EsiDataClasses.EsiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 26.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 34.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 21.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 24.03.2019 19:32:58
+
+System.InvalidOperationException
+Message : Fehler beim Reflektieren des Typs 'EoiData.Settings.GlobalSettings'.
+StackTrace :    bei System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+   bei System.Xml.Serialization.XmlReflectionImporter.ImportElement(TypeModel model, XmlRootAttribute root, String defaultNamespace, RecursionLimiter limiter)
+   bei System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   bei System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   bei System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ImportGlobalSettings() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataReader.cs:Zeile 122.
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataInterface.cs:Zeile 23.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 32.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 22.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.InvalidOperationException
+Message : Das Element 'EoiData.Settings.GlobalSettings.TradeHub' des Typs 'EoiData.Constants.SolarSystem' kann nicht serialisiert werden. Details finden Sie in der inneren Ausnahme.
+StackTrace :    bei System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   bei System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   bei System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   bei System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   bei System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   bei System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+System.InvalidOperationException
+Message : 'EoiData.Constants.SolarSystem' kann nicht serialisiert werden, weil dafür kein parameterloser Konstruktor verfügbar ist.
+StackTrace : 
+-----------------------------------------------------------------------------
+Date : 24.03.2019 19:32:58
+
+System.InvalidOperationException
+Message : Das Element 'EoiData.Settings.GlobalSettings.TradeHub' des Typs 'EoiData.Constants.SolarSystem' kann nicht serialisiert werden. Details finden Sie in der inneren Ausnahme.
+StackTrace :    bei System.Xml.Serialization.StructModel.CheckSupportedMember(TypeDesc typeDesc, MemberInfo member, Type type)
+   bei System.Xml.Serialization.StructModel.GetPropertyModel(PropertyInfo propertyInfo)
+   bei System.Xml.Serialization.StructModel.GetFieldModel(MemberInfo memberInfo)
+   bei System.Xml.Serialization.XmlReflectionImporter.InitializeStructMembers(StructMapping mapping, StructModel model, Boolean openModel, String typeName, RecursionLimiter limiter)
+   bei System.Xml.Serialization.XmlReflectionImporter.ImportStructLikeMapping(StructModel model, String ns, Boolean openModel, XmlAttributes a, RecursionLimiter limiter)
+   bei System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(TypeModel model, String ns, ImportContext context, String dataType, XmlAttributes a, Boolean repeats, Boolean openModel, RecursionLimiter limiter)
+System.InvalidOperationException
+Message : 'EoiData.Constants.SolarSystem' kann nicht serialisiert werden, weil dafür kein parameterloser Konstruktor verfügbar ist.
+StackTrace : 
+-----------------------------------------------------------------------------
+Date : 24.03.2019 19:32:58
+
+System.InvalidOperationException
+Message : 'EoiData.Constants.SolarSystem' kann nicht serialisiert werden, weil dafür kein parameterloser Konstruktor verfügbar ist.
+StackTrace : 
+-----------------------------------------------------------------------------
+Date : 24.03.2019 19:58:14
+
+System.AggregateException
+Message : Mindestens ein Fehler ist aufgetreten.
+StackTrace :    bei System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   bei System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   bei System.Threading.Tasks.Task`1.get_Result()
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(String region, String solarSystem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 47.
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(MarketerDataRequest marketerDataRequest) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 129.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 31.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 97.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Threading.Tasks.TaskCanceledException
+Message : Eine Aufgabe wurde abgebrochen.
+StackTrace : 
+-----------------------------------------------------------------------------
+Date : 24.03.2019 19:58:14
+
+System.Threading.Tasks.TaskCanceledException
+Message : Eine Aufgabe wurde abgebrochen.
+StackTrace : 
+-----------------------------------------------------------------------------
+Date : 24.03.2019 20:02:52
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (1,13).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Deserialize(String response) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 29.
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Request() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 43.
+   bei CorporationWebConnection.CorporationWebInterface.CreateContract(String username, Int32 id, Int32 volume, Decimal price, CorporationWebContractTypes contractType, Boolean materialIncluded, Boolean blueprintIncluded, String description) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 67.
+   bei EoiData.EoiDataClasses.EoiDataInterface.CreateContract(Int32 id, Int32 volume, Decimal price, String contractType, Boolean materialIncluded, Boolean blueprintIncluded, String description) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 104.
+   bei EoiData.EoiClasses.EoiInterface.CreateIndustryContract(EoiBlueprint blueprint, Int32 volume, Decimal price, String orderType, Boolean materialIncluded, Boolean blueprintIncluded, String description) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 89.
+   bei EveOnlineTool.UserInterface.Industry.NewIndustryContractControl.Create() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\UserInterface\Industry\NewIndustryContractControl.xaml.cs:Zeile 59.
+   bei EveOnlineTool.UserInterface.Industry.ContractsControl.CreateClick(Object sender, RoutedEventArgs e) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\UserInterface\Industry\ContractsControl.xaml.cs:Zeile 67.
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   bei System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   bei System.Windows.Controls.Button.OnClick()
+   bei System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   bei System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   bei System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   bei System.Windows.Input.InputManager.ProcessStagingArea()
+   bei System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   bei System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   bei System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   bei System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   bei System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   bei System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   bei System.Windows.Application.RunDispatcher(Object ignore)
+   bei System.Windows.Application.RunInternal(Window window)
+   bei System.Windows.Application.Run(Window window)
+   bei System.Windows.Application.Run()
+   bei EveOnlineIndustrialist.App.Main()
+System.Xml.XmlException
+Message : Unerwartetes Token 'ff0000'. Das erwartete Token ist '"' oder '''. Zeile 1, Position 13.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   bei System.Xml.XmlTextReaderImpl.ThrowUnexpectedToken(String expectedToken1, String expectedToken2)
+   bei System.Xml.XmlTextReaderImpl.ParseAttributes()
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.MoveToContent()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read5_request()
+-----------------------------------------------------------------------------
+Date : 24.03.2019 20:02:54
+
+System.Xml.XmlException
+Message : Unerwartetes Token 'ff0000'. Das erwartete Token ist '"' oder '''. Zeile 1, Position 13.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String[] args)
+   bei System.Xml.XmlTextReaderImpl.ThrowUnexpectedToken(String expectedToken1, String expectedToken2)
+   bei System.Xml.XmlTextReaderImpl.ParseAttributes()
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.MoveToContent()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read5_request()
+-----------------------------------------------------------------------------
+Date : 24.03.2019 20:11:51
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (2,59).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Deserialize(String response) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 29.
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Request() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 43.
+   bei CorporationWebConnection.CorporationWebInterface.GetContracts(String username) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 76.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeCorporationContracts() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 160.
+   bei EoiData.EoiDataClasses.EoiDataInterface.CreateContract(Int32 id, Int32 volume, Decimal price, String contractType, Boolean materialIncluded, Boolean blueprintIncluded, String description) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 107.
+   bei EoiData.EoiClasses.EoiInterface.CreateIndustryContract(EoiBlueprint blueprint, Int32 volume, Decimal price, String orderType, Boolean materialIncluded, Boolean blueprintIncluded, String description) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 89.
+   bei EveOnlineTool.UserInterface.Industry.NewIndustryContractControl.Create() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\UserInterface\Industry\NewIndustryContractControl.xaml.cs:Zeile 59.
+   bei EveOnlineTool.UserInterface.Industry.ContractsControl.CreateClick(Object sender, RoutedEventArgs e) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\UserInterface\Industry\ContractsControl.xaml.cs:Zeile 67.
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   bei System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   bei System.Windows.Controls.Button.OnClick()
+   bei System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   bei System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   bei System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   bei System.Windows.Input.InputManager.ProcessStagingArea()
+   bei System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   bei System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   bei System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   bei System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   bei System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   bei System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   bei System.Windows.Application.RunDispatcher(Object ignore)
+   bei System.Windows.Application.RunInternal(Window window)
+   bei System.Windows.Application.Run(Window window)
+   bei System.Windows.Application.Run()
+   bei EveOnlineIndustrialist.App.Main()
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read3_WebContract(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read4_WebContractRequest(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read5_request()
+-----------------------------------------------------------------------------
+Date : 24.03.2019 20:11:51
+
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read3_WebContract(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read4_WebContractRequest(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebContractRequest.Read5_request()
+-----------------------------------------------------------------------------
+Date : 26.03.2019 08:10:40
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei CorporationWebConnection.CorporationWebInterface.SetBlueprint(String username, CorporationWebBlueprint bp) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 36.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 242.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 127.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 58.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 97.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 29.03.2019 08:13:55
+
+System.InvalidOperationException
+Message : Die Sammlung wurde geändert. Der Enumerationsvorgang kann möglicherweise nicht ausgeführt werden.
+StackTrace :    bei System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   bei System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   bei System.Collections.Generic.List`1.Enumerator.MoveNext()
+   bei EoiData.MarketerDataClasses.MarketerDataReader.RequestAll() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 135.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 16.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 97.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 30.03.2019 08:58:02
+
+System.AggregateException
+Message : Mindestens ein Fehler ist aufgetreten.
+StackTrace :    bei System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   bei System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   bei System.Threading.Tasks.Task`1.get_Result()
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(String region, String solarSystem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 48.
+   bei EoiData.MarketerDataClasses.MarketerDataReader.RequestAll() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 163.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 16.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 97.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Threading.Tasks.TaskCanceledException
+Message : Eine Aufgabe wurde abgebrochen.
+StackTrace : 
+-----------------------------------------------------------------------------
+Date : 30.03.2019 08:58:02
+
+System.Threading.Tasks.TaskCanceledException
+Message : Eine Aufgabe wurde abgebrochen.
+StackTrace : 
+-----------------------------------------------------------------------------
+Date : 30.03.2019 14:37:26
+
+System.UriFormatException
+Message : Ungültiger URI: Das URI-Format konnte nicht bestimmt werden.
+StackTrace :    bei System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   bei System.Uri..ctor(String uriString)
+   bei EveOnlineTool.UserInterface.Controls.DataGridActionColumn.CreateCellContent() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\UserInterface\Controls\DataGridActionColumn.cs:Zeile 30.
+   bei EveOnlineTool.UserInterface.Controls.DataGridActionColumn.GenerateElement(DataGridCell cell, Object dataItem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\UserInterface\Controls\DataGridActionColumn.cs:Zeile 21.
+   bei System.Windows.Controls.DataGridCell.BuildVisualTree()
+   bei System.Windows.Controls.DataGridCell.PrepareCell(Object item, DataGridRow ownerRow, Int32 index)
+   bei System.Windows.Controls.Primitives.DataGridCellsPresenter.PrepareContainerForItemOverride(DependencyObject element, Object item)
+   bei System.Windows.Controls.ItemsControl.MS.Internal.Controls.IGeneratorHost.PrepareItemContainer(DependencyObject container, Object item)
+   bei System.Windows.Controls.ItemContainerGenerator.System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer(DependencyObject container)
+   bei System.Windows.Controls.DataGridCellsPanel.InsertContainer(Int32 childIndex, UIElement container, Boolean isRecycled)
+   bei System.Windows.Controls.DataGridCellsPanel.AddContainerFromGenerator(Int32 childIndex, UIElement child, Boolean newlyRealized)
+   bei System.Windows.Controls.DataGridCellsPanel.GenerateChild(IItemContainerGenerator generator, Size constraint, DataGridColumn column, Int32& childIndex, Size& childSize)
+   bei System.Windows.Controls.DataGridCellsPanel.GenerateChildren(IItemContainerGenerator generator, Int32 startIndex, Int32 endIndex, Size constraint)
+   bei System.Windows.Controls.DataGridCellsPanel.GenerateAndMeasureChildrenForRealizedColumns(Size constraint)
+   bei System.Windows.Controls.DataGridCellsPanel.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei MS.Internal.Helper.MeasureElementWithSingleChild(UIElement element, Size constraint)
+   bei System.Windows.Controls.ItemsPresenter.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Control.MeasureOverride(Size constraint)
+   bei System.Windows.Controls.Primitives.DataGridCellsPresenter.MeasureOverride(Size availableSize)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Grid.MeasureCell(Int32 cell, Boolean forceInfinityV)
+   bei System.Windows.Controls.Grid.MeasureCellsGroup(Int32 cellsHead, Size referenceSize, Boolean ignoreDesiredSizeU, Boolean forceInfinityV, Boolean& hasDesiredSizeUChanged)
+   bei System.Windows.Controls.Grid.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Border.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Control.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.VirtualizingStackPanel.MeasureChild(IItemContainerGenerator& generator, IContainItemStorage& itemStorageProvider, IContainItemStorage& parentItemStorageProvider, Object& parentItem, Boolean& hasUniformOrAverageContainerSizeBeenSet, Double& computedUniformOrAverageContainerSize, Double& computedUniformOrAverageContainerPixelSize, Boolean& computedAreContainersUniformlySized, Boolean& hasAnyContainerSpanChanged, IList& items, Object& item, IList& children, Int32& childIndex, Boolean& visualOrderChanged, Boolean& isHorizontal, Size& childConstraint, Rect& viewport, VirtualizationCacheLength& cacheSize, VirtualizationCacheLengthUnit& cacheUnit, Boolean& foundFirstItemInViewport, Double& firstItemInViewportOffset, Size& stackPixelSize, Size& stackPixelSizeInViewport, Size& stackPixelSizeInCacheBeforeViewport, Size& stackPixelSizeInCacheAfterViewport, Size& stackLogicalSize, Size& stackLogicalSizeInViewport, Size& stackLogicalSizeInCacheBeforeViewport, Size& stackLogicalSizeInCacheAfterViewport, Boolean& mustDisableVirtualization, Boolean isBeforeFirstItem, Boolean isAfterFirstItem, Boolean isAfterLastItem, Boolean skipActualMeasure, Boolean skipGeneration, Boolean& hasBringIntoViewContainerBeenMeasured, Boolean& hasVirtualizingChildren)
+   bei System.Windows.Controls.VirtualizingStackPanel.MeasureOverrideImpl(Size constraint, Nullable`1& lastPageSafeOffset, List`1& previouslyMeasuredOffsets, Nullable`1& lastPagePixelSize, Boolean remeasure)
+   bei System.Windows.Controls.VirtualizingStackPanel.MeasureOverride(Size constraint)
+   bei System.Windows.Controls.Primitives.DataGridRowsPresenter.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei MS.Internal.Helper.MeasureElementWithSingleChild(UIElement element, Size constraint)
+   bei System.Windows.Controls.ItemsPresenter.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei MS.Internal.Helper.MeasureElementWithSingleChild(UIElement element, Size constraint)
+   bei System.Windows.Controls.ScrollContentPresenter.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Grid.MeasureCell(Int32 cell, Boolean forceInfinityV)
+   bei System.Windows.Controls.Grid.MeasureCellsGroup(Int32 cellsHead, Size referenceSize, Boolean ignoreDesiredSizeU, Boolean forceInfinityV, Boolean& hasDesiredSizeUChanged)
+   bei System.Windows.Controls.Grid.MeasureCellsGroup(Int32 cellsHead, Size referenceSize, Boolean ignoreDesiredSizeU, Boolean forceInfinityV)
+   bei System.Windows.Controls.Grid.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.ScrollViewer.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Border.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Control.MeasureOverride(Size constraint)
+   bei System.Windows.Controls.DataGrid.MeasureOverride(Size availableSize)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei MS.Internal.Helper.MeasureElementWithSingleChild(UIElement element, Size constraint)
+   bei System.Windows.Controls.ContentPresenter.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Grid.MeasureCell(Int32 cell, Boolean forceInfinityV)
+   bei System.Windows.Controls.Grid.MeasureCellsGroup(Int32 cellsHead, Size referenceSize, Boolean ignoreDesiredSizeU, Boolean forceInfinityV, Boolean& hasDesiredSizeUChanged)
+   bei System.Windows.Controls.Grid.MeasureCellsGroup(Int32 cellsHead, Size referenceSize, Boolean ignoreDesiredSizeU, Boolean forceInfinityV)
+   bei System.Windows.Controls.Grid.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Control.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Grid.MeasureCell(Int32 cell, Boolean forceInfinityV)
+   bei System.Windows.Controls.Grid.MeasureCellsGroup(Int32 cellsHead, Size referenceSize, Boolean ignoreDesiredSizeU, Boolean forceInfinityV, Boolean& hasDesiredSizeUChanged)
+   bei System.Windows.Controls.Grid.MeasureCellsGroup(Int32 cellsHead, Size referenceSize, Boolean ignoreDesiredSizeU, Boolean forceInfinityV)
+   bei System.Windows.Controls.Grid.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei MS.Internal.Helper.MeasureElementWithSingleChild(UIElement element, Size constraint)
+   bei System.Windows.Controls.ContentPresenter.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Border.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.Controls.Control.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei MS.Internal.Helper.MeasureElementWithSingleChild(UIElement element, Size constraint)
+   bei System.Windows.Controls.ContentPresenter.MeasureOverride(Size constraint)
+   bei System.Windows.FrameworkElement.MeasureCore(Size availableSize)
+   bei System.Windows.UIElement.Measure(Size availableSize)
+   bei System.Windows.ContextLayoutManager.UpdateLayout()
+   bei System.Windows.UIElement.UpdateLayout()
+   bei System.Windows.Controls.TabItem.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)
+   bei System.Windows.UIElement.OnPreviewGotKeyboardFocusThunk(Object sender, KeyboardFocusChangedEventArgs e)
+   bei System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   bei System.Windows.Input.InputManager.ProcessStagingArea()
+   bei System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   bei System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   bei System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   bei System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   bei System.Windows.UIElement.Focus()
+   bei System.Windows.Controls.TabItem.SetFocus()
+   bei System.Windows.Controls.TabItem.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   bei System.Windows.UIElement.OnMouseLeftButtonDownThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   bei System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   bei System.Windows.Input.InputManager.ProcessStagingArea()
+   bei System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   bei System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   bei System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   bei System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   bei System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   bei System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   bei System.Windows.Application.RunDispatcher(Object ignore)
+   bei System.Windows.Application.RunInternal(Window window)
+   bei System.Windows.Application.Run(Window window)
+   bei System.Windows.Application.Run()
+   bei EveOnlineIndustrialist.App.Main()
+-----------------------------------------------------------------------------
+Date : 30.03.2019 19:34:10
+
+System.NotImplementedException
+Message : Die Methode oder der Vorgang ist nicht implementiert.
+StackTrace :    bei EveOnlineTool.UserInterface.Industry.AcceptIndustryContractControl.Reset()
+   bei EveOnlineTool.UserInterface.Industry.AcceptIndustryContractControl.Cancel()
+   bei EveOnlineTool.UserInterface.Industry.ContractsControl.CancelClick(Object sender, RoutedEventArgs e)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   bei System.Windows.Controls.Primitives.ButtonBase.OnClick()
+   bei System.Windows.Controls.Button.OnClick()
+   bei System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonUp(MouseButtonEventArgs e)
+   bei System.Windows.UIElement.OnMouseLeftButtonUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   bei System.Windows.UIElement.OnMouseUpThunk(Object sender, MouseButtonEventArgs e)
+   bei System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   bei System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   bei System.Windows.Input.InputManager.ProcessStagingArea()
+   bei System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   bei System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   bei System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   bei System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   bei System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   bei System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   bei System.Windows.Application.RunDispatcher(Object ignore)
+   bei System.Windows.Application.RunInternal(Window window)
+   bei System.Windows.Application.Run(Window window)
+   bei System.Windows.Application.Run()
+   bei EveOnlineIndustrialist.App.Main()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 10:16:51
+
+System.ArgumentNullException
+Message : Der Wert darf nicht NULL sein.
+Parametername: source
+StackTrace :    bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(String region, String solarSystem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 51.
+   bei EoiData.MarketerDataClasses.MarketerDataReader.RequestAll() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 163.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 16.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 102.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 10:18:48
+
+System.ArgumentNullException
+Message : Der Wert darf nicht NULL sein.
+Parametername: source
+StackTrace :    bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(String region, String solarSystem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 51.
+   bei EoiData.MarketerDataClasses.MarketerDataReader.RequestAll() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 163.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 16.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 102.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 10:19:27
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei System.Collections.Generic.List`1.Enumerator.MoveNext()
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(String region, String solarSystem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 66.
+   bei EoiData.MarketerDataClasses.MarketerDataReader.RequestAll() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 163.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 16.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 102.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 10:19:36
+
+System.ArgumentNullException
+Message : Der Wert darf nicht NULL sein.
+Parametername: source
+StackTrace :    bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(String region, String solarSystem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 51.
+   bei EoiData.MarketerDataClasses.MarketerDataReader.RequestAll() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 163.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 16.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 102.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 10:21:25
+
+System.ArgumentNullException
+Message : Der Wert darf nicht NULL sein.
+Parametername: source
+StackTrace :    bei System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   bei EoiData.MarketerDataClasses.MarketerDataReader.Request(String region, String solarSystem) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 51.
+   bei EoiData.MarketerDataClasses.MarketerDataReader.RequestAll() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataReader.cs:Zeile 163.
+   bei EoiData.MarketerDataClasses.MarketerDataInterface.RequestBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\MarketerDataClasses\MarketerDataInterface.cs:Zeile 16.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 158.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 102.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 13:44:59
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (1,1).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Deserialize(String response) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 29.
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Request() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 43.
+   bei CorporationWebConnection.CorporationWebInterface.SetBlueprint(String username, CorporationWebBlueprint bp) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 43.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 345.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 127.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 58.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Xml.XmlException
+Message : Ungültige Daten auf Stammebene. Zeile 1, Position 1.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   bei System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.MoveToContent()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebBlueprintRequest.Read5_request()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 13:44:59
+
+System.Xml.XmlException
+Message : Ungültige Daten auf Stammebene. Zeile 1, Position 1.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseRootLevelWhitespace()
+   bei System.Xml.XmlTextReaderImpl.ParseDocumentContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.MoveToContent()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderWebBlueprintRequest.Read5_request()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 14:33:10
+
+System.NotSupportedException
+Message : Von diesem CollectionView-Typ werden keine Änderungen der "SourceCollection" unterstützt, wenn diese nicht von einem Dispatcher-Thread aus erfolgen.
+StackTrace :    bei System.Windows.Data.CollectionView.OnCollectionChanged(Object sender, NotifyCollectionChangedEventArgs args)
+   bei System.Collections.Specialized.NotifyCollectionChangedEventHandler.Invoke(Object sender, NotifyCollectionChangedEventArgs e)
+   bei System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(NotifyCollectionChangedEventArgs e)
+   bei System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(Int32 index)
+   bei System.Collections.ObjectModel.Collection`1.Remove(T item)
+   bei EoiData.EoiClasses.EoiInterface.RemoveContract(EoiContract eoiContract) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 150.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeCorporationContracts() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 281.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeCorporationContracts() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 120.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 67.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 15:27:31
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.EoiDataClasses.EoiDataBlueprint.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 304.
+   bei EoiData.EoiDataClasses.EoiDataInterface.InitEoiDataContent() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 245.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 38.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 23.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 19:25:59
+
+System.InvalidOperationException
+Message : Die Sequenz enthält keine Elemente.
+StackTrace :    bei System.Linq.Enumerable.Min(IEnumerable`1 source)
+   bei System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.OnMarketOrdersUpdated() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 178.
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.CheckMarketOrders() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 132.
+   bei EoiData.EoiDataClasses.EoiDataInterface.CheckMarketOrders() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 246.
+   bei EoiData.Helper.BackgroundWorker.CheckMarketerData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 159.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 77.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 20:22:32
+
+System.InvalidOperationException
+Message : Die Sequenz enthält keine Elemente.
+StackTrace :    bei System.Linq.Enumerable.Min(IEnumerable`1 source)
+   bei System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.InitializeEoiBlueprint() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 399.
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.GetEoiBlueprint() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 335.
+   bei EoiData.EoiClasses.EoiInterface.Initialize() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 34.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 24.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 31.03.2019 20:23:08
+
+System.InvalidOperationException
+Message : Die Sequenz enthält keine Elemente.
+StackTrace :    bei System.Linq.Enumerable.Min(IEnumerable`1 source)
+   bei System.Linq.Enumerable.Min[TSource](IEnumerable`1 source, Func`2 selector)
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.InitializeEoiBlueprint()
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.GetEoiBlueprint()
+   bei EoiData.EoiClasses.EoiInterface.Initialize()
+   bei EoiData.EoiClasses.EoiInterface.Init()
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 01.04.2019 11:16:10
+
+System.Net.WebException
+Message : Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung.
+StackTrace :    bei System.Net.WebClient.UploadValues(Uri address, String method, NameValueCollection data)
+   bei System.Net.WebClient.UploadValues(String address, String method, NameValueCollection data)
+   bei EoiData.WebDataClasses.WebDataReader.RefreshAccessToken(String refreshToken) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataReader.cs:Zeile 93.
+   bei EoiData.WebDataClasses.WebDataInterface.RefreshAccessToken(String refreshToken) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataInterface.cs:Zeile 30.
+   bei EoiData.EoiDataClasses.EoiDataUser.CheckAccessToken() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataUser.cs:Zeile 118.
+   bei EoiData.EoiDataClasses.EoiDataInterface.CheckUserAccessTokens() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 437.
+   bei EoiData.Helper.BackgroundWorker.CheckUserAccessTokens() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 148.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 100.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 12.04.2019 22:28:28
+
+System.Exception
+Message : 376.31 ist kein gültiger Wert für Int32.
+StackTrace :    bei System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Deserialize(String response) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 51.
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Start() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 103.
+   bei EveSwaggerConnection.EveSwaggerInterface.GetWalletTransactions(String token, Int32 userId) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\EveSwaggerInterface.cs:Zeile 111.
+   bei EoiData.EoiDataClasses.EoiDataUser.SynchronizeWallet() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataUser.cs:Zeile 140.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeWallet() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 305.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeWallet() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 130.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 60.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   bei System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   bei System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+-----------------------------------------------------------------------------
+Date : 12.04.2019 22:28:28
+
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   bei System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   bei System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+-----------------------------------------------------------------------------
+Date : 13.04.2019 09:42:51
+
+System.InvalidOperationException
+Message : Ein Objekt vom Typ "System.Int32" kann nicht in den Typ "System.Int64[]" konvertiert werden.
+StackTrace :    bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Deserialize(String response) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 51.
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Start() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 103.
+   bei EveSwaggerConnection.EveSwaggerInterface.GetSolarSystem(Int64 solarSystemId) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\EveSwaggerInterface.cs:Zeile 105.
+   bei EoiData.EsiDataClasses.EsiDataInterface.InititalizeSolarSystems() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 43.
+   bei EoiData.EsiDataClasses.EsiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 33.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 23.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 13.04.2019 09:44:20
+
+System.InvalidOperationException
+Message : Ein Objekt vom Typ "System.Int32" kann nicht in den Typ "System.Int64[]" konvertiert werden.
+StackTrace :    bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AddItemToList(IList oldList, IList newList, Type elementType, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertListToObject(IList list, Type type, JavaScriptSerializer serializer, Boolean throwOnError, IList& convertedList)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Deserialize(String response) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 51.
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Start() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 103.
+   bei EveSwaggerConnection.EveSwaggerInterface.GetSolarSystem(Int64 solarSystemId) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\EveSwaggerInterface.cs:Zeile 105.
+   bei EoiData.EsiDataClasses.EsiDataInterface.InititalizeSolarSystems() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 43.
+   bei EoiData.EsiDataClasses.EsiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 33.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 23.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 13.04.2019 09:46:34
+
+System.Exception
+Message : -88510792599980580.0 ist kein gültiger Wert für Int64.
+StackTrace :    bei System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.AssignToPropertyOrField(Object propertyValue, Object o, String memberName, JavaScriptSerializer serializer, Boolean throwOnError)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertDictionaryToObject(IDictionary`2 dictionary, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeInternal(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.ObjectConverter.ConvertObjectToTypeMain(Object o, Type type, JavaScriptSerializer serializer, Boolean throwOnError, Object& convertedObject)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize(JavaScriptSerializer serializer, String input, Type type, Int32 depthLimit)
+   bei System.Web.Script.Serialization.JavaScriptSerializer.Deserialize[T](String input)
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Deserialize(String response) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 51.
+   bei EveSwaggerConnection.ESI_Communication.Operations.Operation`1.Start() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\ESI Communication\Operations\Operation.cs:Zeile 103.
+   bei EveSwaggerConnection.EveSwaggerInterface.GetSolarSystem(Int64 solarSystemId) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\EveSwaggerInterface.cs:Zeile 105.
+   bei EoiData.EsiDataClasses.EsiDataInterface.InititalizeSolarSystems() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 43.
+   bei EoiData.EsiDataClasses.EsiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EsiDataClasses\EsiDataInterface.cs:Zeile 33.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 23.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   bei System.ComponentModel.Int64Converter.FromString(String value, NumberFormatInfo formatInfo)
+   bei System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+-----------------------------------------------------------------------------
+Date : 13.04.2019 09:46:34
+
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   bei System.ComponentModel.Int64Converter.FromString(String value, NumberFormatInfo formatInfo)
+   bei System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+-----------------------------------------------------------------------------
+Date : 13.04.2019 18:23:37
+
+System.InvalidOperationException
+Message : Die Sammlung wurde geändert. Der Enumerationsvorgang kann möglicherweise nicht ausgeführt werden.
+StackTrace :    bei System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   bei System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   bei System.Collections.Generic.List`1.Enumerator.MoveNext()
+   bei System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   bei EveSwaggerConnection.EveSwaggerInterface.Working() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\EveSwaggerInterface.cs:Zeile 55.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 121.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 13.04.2019 21:48:39
+
+System.InvalidOperationException
+Message : Die Sequenz enthält keine Elemente.
+StackTrace :    bei System.Linq.Enumerable.Max(IEnumerable`1 source)
+   bei System.Linq.Enumerable.Max[TSource](IEnumerable`1 source, Func`2 selector)
+   bei EoiData.Helper.BlueprintCalculator.Calculate(EoiDataBlueprint blueprint) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BlueprintCalculator.cs:Zeile 89.
+   bei EoiData.EoiDataClasses.EoiDataInterface.CalculateAllBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 559.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 106.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 14.04.2019 09:20:13
+
+System.ArgumentNullException
+Message : Der Wert darf nicht NULL sein.
+Parametername: source
+StackTrace :    bei System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeAssets() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 330.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeAssets() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 132.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 60.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 14.04.2019 09:23:08
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeAssets() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 328.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeAssets() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 132.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 60.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 112.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 14.04.2019 13:41:53
+
+System.ArgumentNullException
+Message : Der Wert darf nicht NULL sein.
+Parametername: source
+StackTrace :    bei System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   bei EoiData.EoiDataClasses.EoiDataInterface.GetTypeById(Int64 id) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 210.
+   bei EoiData.EoiDataClasses.EoiDataAsset..ctor(FileSystemDataAsset fileSystemDataAsset) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataAsset.cs:Zeile 33.
+   bei EoiData.EoiDataClasses.EoiDataInterface.InitializeAssets() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 585.
+   bei EoiData.EoiDataClasses.EoiDataInterface.InitializeEoiData() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 565.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 24.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 16.04.2019 18:25:23
+
+System.InvalidOperationException
+Message : Die Sammlung wurde geändert. Der Enumerationsvorgang kann möglicherweise nicht ausgeführt werden.
+StackTrace :    bei System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   bei System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   bei System.Collections.Generic.List`1.Enumerator.MoveNext()
+   bei System.Linq.Enumerable.Any[TSource](IEnumerable`1 source)
+   bei EveSwaggerConnection.EveSwaggerInterface.Working() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveSwaggerConnection\EveSwaggerConnection\EveSwaggerInterface.cs:Zeile 55.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 124.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 150.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 17.04.2019 11:42:16
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.EoiDataClasses.EoiDataBlueprint.<>c__DisplayClass50_0.<InitializeEoiBlueprint>b__0(EsiDataMarketOrders x) in C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 417.
+   bei System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.InitializeEoiBlueprint() in C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 417.
+   bei EoiData.EoiDataClasses.EoiDataBlueprint.GetEoiBlueprint() in C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\EoiDataClasses\EoiDataBlueprint.cs:Zeile 349.
+   bei EoiData.EoiClasses.EoiInterface.Initialize() in C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 17.04.2019 11:48:21
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.Helper.BlueprintCalculator.<>c__DisplayClass0_0.<Calculate>b__1(EsiDataMarketOrders x)
+   bei System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   bei EoiData.Helper.BlueprintCalculator.Calculate(EoiDataBlueprint blueprint)
+   bei EoiData.EoiDataClasses.EoiDataInterface.CalculateAllBlueprints()
+   bei EoiData.EoiClasses.EoiInterface.Init()
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 17.04.2019 16:36:14
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei EoiData.EoiClasses.EoiInterface.Initialize() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 65.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 26.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 17.04.2019 17:33:35
+
+System.InvalidOperationException
+Message : 'EoiData.EsiDataClasses.EsiDataSolarSystem' kann nicht serialisiert werden, weil dafür kein parameterloser Konstruktor verfügbar ist.
+StackTrace :    bei System.Xml.Serialization.TypeDesc.CheckSupported()
+   bei System.Xml.Serialization.TypeDesc.CheckSupported()
+   bei System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   bei System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   bei System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   bei System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   bei System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ExportSolarSystems(List`1 solarSystems)
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Close()
+   bei EoiData.EoiDataClasses.EoiDataInterface.Close()
+   bei EoiData.EoiClasses.EoiInterface.Close()
+   bei EveOnlineTool.Splash.Splash_Closing(Object sender, CancelEventArgs e) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\Splash.xaml.cs:Zeile 68.
+   bei System.Windows.Window.OnClosing(CancelEventArgs e)
+   bei System.Windows.Window.WmClose()
+   bei System.Windows.Window.WindowFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei System.Windows.Interop.HwndSource.PublicHooksFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.UnsafeSendMessage(IntPtr hWnd, WindowMessage msg, IntPtr wParam, IntPtr lParam)
+   bei System.Windows.Window.InternalClose(Boolean shutdown, Boolean ignoreCancel)
+   bei System.Windows.Application.DoShutdown()
+   bei System.Windows.Application.ShutdownImpl()
+   bei System.Windows.Application.ShutdownCallback(Object arg)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   bei System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext(Object state)
+   bei MS.Internal.CulturePreservingExecutionContext.CallbackWrapper(Object obj)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Windows.Threading.DispatcherOperation.Invoke()
+   bei System.Windows.Threading.Dispatcher.ProcessQueue()
+   bei System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   bei System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   bei System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   bei System.Windows.Application.RunDispatcher(Object ignore)
+   bei System.Windows.Application.RunInternal(Window window)
+   bei System.Windows.Application.Run(Window window)
+   bei System.Windows.Application.Run()
+   bei EveOnlineIndustrialist.App.Main()
+-----------------------------------------------------------------------------
+Date : 28.04.2019 12:40:01
+
+System.AggregateException
+Message : Mindestens ein Fehler ist aufgetreten.
+StackTrace :    bei System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   bei System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   bei System.Threading.Tasks.Task`1.get_Result()
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Request() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 38.
+   bei CorporationWebConnection.CorporationWebInterface.SetBlueprint(String username, CorporationWebBlueprint bp) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 43.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 539.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 152.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 54.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   bei System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 28.04.2019 12:40:01
+
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   bei System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 28.04.2019 12:40:01
+
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   bei System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 19.05.2019 09:00:49
+
+System.AggregateException
+Message : Mindestens ein Fehler ist aufgetreten.
+StackTrace :    bei System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   bei System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   bei System.Threading.Tasks.Task`1.get_Result()
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Request() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 38.
+   bei CorporationWebConnection.CorporationWebInterface.SetBlueprint(String username, CorporationWebBlueprint bp) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 43.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 567.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 160.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 54.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 19.05.2019 09:00:49
+
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 19.05.2019 09:00:49
+
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 21.05.2019 08:15:31
+
+System.Net.WebException
+Message : Der Remoteserver hat einen Fehler zurückgegeben: (500) Interner Serverfehler.
+StackTrace :    bei System.Net.WebClient.UploadValues(Uri address, String method, NameValueCollection data)
+   bei System.Net.WebClient.UploadValues(String address, String method, NameValueCollection data)
+   bei EoiData.WebDataClasses.WebDataReader.RefreshAccessToken(String refreshToken) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataReader.cs:Zeile 93.
+   bei EoiData.WebDataClasses.WebDataInterface.RefreshAccessToken(String refreshToken) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataInterface.cs:Zeile 30.
+   bei EoiData.EoiDataClasses.EoiDataUser.CheckAccessToken() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataUser.cs:Zeile 121.
+   bei EoiData.EoiDataClasses.EoiDataInterface.CheckUserAccessTokens() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 609.
+   bei EoiData.Helper.BackgroundWorker.CheckUserAccessTokens() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 180.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 106.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 22.05.2019 08:40:19
+
+System.AggregateException
+Message : Mindestens ein Fehler ist aufgetreten.
+StackTrace :    bei System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   bei System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   bei System.Threading.Tasks.Task`1.get_Result()
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Request() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 38.
+   bei CorporationWebConnection.CorporationWebInterface.SetBlueprint(String username, CorporationWebBlueprint bp) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 43.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 567.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 160.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 54.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 22.05.2019 08:40:19
+
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 22.05.2019 08:40:19
+
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 22.05.2019 09:11:04
+
+System.AggregateException
+Message : Mindestens ein Fehler ist aufgetreten.
+StackTrace :    bei System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   bei System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   bei System.Threading.Tasks.Task`1.get_Result()
+   bei CorporationWebConnection.WebCommunication.Operations.Operation`1.Request() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\WebCommunication\Operations\Operation.cs:Zeile 38.
+   bei CorporationWebConnection.CorporationWebInterface.SetBlueprint(String username, CorporationWebBlueprint bp) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 43.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 567.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 160.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 54.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 22.05.2019 09:11:04
+
+System.Net.Http.HttpRequestException
+Message : Fehler beim Senden der Anforderung.
+StackTrace : 
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 22.05.2019 09:11:04
+
+System.Net.WebException
+Message : Die zugrunde liegende Verbindung wurde geschlossen: Die Verbindung wurde unerwartet getrennt..
+StackTrace :    bei System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   bei System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+-----------------------------------------------------------------------------
+Date : 25.05.2019 11:00:57
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei CorporationWebConnection.CorporationWebInterface.SetBlueprint(String username, CorporationWebBlueprint bp) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 44.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 567.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 160.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 54.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()

@@ -1,0 +1,160 @@
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\MainWindow.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\App.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_MarkupCompile.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_MarkupCompile.lref
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.exe
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe.config
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\YamlDotNet.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\YamlDotNet.xml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\MainWindow.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.g.resources
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.Properties.Resources.resources
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\App.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csprojAssemblyReference.cache
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csproj.CopyComplete
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\Splash.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\Splash.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveSwaggerConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveSwaggerConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveSwaggerConnection.dll.config
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\CorporationWebConnection.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\CorporationWebConnection.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EoiData.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EoiData.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Dashboard.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Dashboard.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Market\Market.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Market\Market.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\UserManagement.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintsControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintsControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\UserManagement.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\EoiUserControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\EoiUserControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe.config
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\CorporationWebConnection.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EoiData.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveSwaggerConnection.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\YamlDotNet.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveSwaggerConnection.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveSwaggerConnection.dll.config
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\CorporationWebConnection.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EoiData.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\YamlDotNet.xml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csprojAssemblyReference.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\MainWindow.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\Splash.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Dashboard.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintsControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Market\Market.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\EoiUserControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\UserManagement.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\App.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_MarkupCompile.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_MarkupCompile.lref
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\App.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\MainWindow.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\Splash.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Dashboard.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\BlueprintsControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Market\Market.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\EoiUserControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\UserManagement.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.g.resources
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.Properties.Resources.resources
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csproj.GenerateResource.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csproj.CoreCompileInputs.cache
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineIndustrialist.csproj.CopyComplete
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.exe
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\SettingsControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\SettingsControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractsControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractsControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractsControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\SettingsControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\ContractsControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Settings\SettingsControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\Themes\Generic.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Hauling\HaulingContractsControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\Themes\Generic.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Hauling\HaulingContractsControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Hauling\HaulingContractsControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Hauling\HaulingContractsControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\NewIndustryContractControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\NewIndustryContractControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_Content.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\blueprints.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\categoryIDs.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\certificates.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\graphicIDs.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\groupIDs.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\iconIDs.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\skinLicenses.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\skinMaterials.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\skins.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\tournamentRuleSets.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\typeIDs.yaml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe.manifest
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.application
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.exe.manifest
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.application
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\AcceptIndustryContractControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\AcceptIndustryContractControl.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\AssetsControl.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\AssetsControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\blueprints.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\categoryIDs.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\certificates.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\graphicIDs.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\groupIDs.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\iconIDs.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\skinLicenses.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\skinMaterials.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\skins.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\tournamentRuleSets.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\sde\fsd\typeIDs.yaml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.exe.manifest
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\EveOnlineTool.application
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\AssetsControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\AcceptIndustryContractControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\NewIndustryContractControl.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool_Content.g.cs
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\AssetsControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\AcceptIndustryContractControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\UserInterface\Industry\NewIndustryContractControl.baml
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.exe.manifest
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\obj\Debug\EveOnlineTool.application
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.DataVisualization.Toolkit.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Input.Toolkit.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Layout.Toolkit.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.WPF.Themes.dll
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.DataVisualization.Toolkit.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Input.Toolkit.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Layout.Toolkit.pdb
+C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.WPF.Themes.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.DataVisualization.Toolkit.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Input.Toolkit.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Layout.Toolkit.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.WPF.Themes.dll
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.DataVisualization.Toolkit.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Input.Toolkit.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.Layout.Toolkit.pdb
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\bin\Debug\DotNetProjects.WPF.Themes.pdb
