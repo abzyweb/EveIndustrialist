@@ -15,6 +15,9 @@ namespace EoiData.Constants
         public static SolarSystem Ebo { get; set; } = new SolarSystem(30002269, "Ebo");
         public static SolarSystem Irnal { get; set; } = new SolarSystem(30003524, "Irnal");
         public static SolarSystem Miakie { get; set; } = new SolarSystem(30003539, "Miakie");
+        public static SolarSystem Vashkah { get; set; } = new SolarSystem(30002230, "Vashkah");
+        public static SolarSystem Bika { get; set; } = new SolarSystem(30002252, "Bika");
+        public static SolarSystem Jerma { get; set; } = new SolarSystem(30002254, "Jerma");
         public static SolarSystem Hek { get; set; } = new SolarSystem(30002053, "Hek");
         public static SolarSystem Dodixie { get; set; } = new SolarSystem(30002659, "Dodixie");
         public static SolarSystem Rens { get; set; } = new SolarSystem(30002510, "Rens");

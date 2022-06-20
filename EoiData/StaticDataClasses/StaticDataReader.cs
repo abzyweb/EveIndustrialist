@@ -10,12 +10,14 @@ namespace EoiData.StaticDataClasses.StaticDataReader
 {
     internal static class StaticDataReader
     {
-        private static string _sdePath = "sde/fsd/";
+        private static string _sdePath = "sde";
+        private static string _fsdPath = "fsd";
+        private static string _version = "new";
 
         internal static List<StaticDataBlueprint> LoadBlueprints()
         {
             var assemblyLocation = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            var path = Path.Combine(assemblyLocation, _sdePath, "blueprints.yaml");
+            var path = Path.Combine(assemblyLocation, _sdePath, _fsdPath, _version, "blueprints.yaml");
 
             var fileInfo = new FileInfo(path);
 
@@ -38,7 +40,7 @@ namespace EoiData.StaticDataClasses.StaticDataReader
         internal static List<StaticDataType> LoadTypes()
         {   
             var assemblyLocation = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            var path = Path.Combine(assemblyLocation, _sdePath, "typeIDs.yaml");
+            var path = Path.Combine(assemblyLocation, _sdePath, _fsdPath, _version, "typeIDs.yaml");
 
             var fileInfo = new FileInfo(path);
 
@@ -64,7 +66,12 @@ namespace EoiData.StaticDataClasses.StaticDataReader
 
     public class RawTypeId
     {
-        public int? groupID { get; set; }
+        // new
+        public int? metaGroupID { get; set; }
+        public int? variationParentTypeID { get; set; }
+
+        // old
+        public int? groupID { get; set; }       
         public double? mass { get; set; }
         public Dictionary<string, string> name { set; get; }
         public int portionSize { get; set; }
@@ -91,6 +98,7 @@ namespace EoiData.StaticDataClasses.StaticDataReader
     {
         public List<RawRoleBonus> miscBonuses { set; get; }
         public List<RawRoleBonus> roleBonuses { set; get; }
+        public int? iconID { get; set; }
         public Dictionary<int, List<RawTraitType>> types { set; get; }
     }
 
@@ -105,6 +113,7 @@ namespace EoiData.StaticDataClasses.StaticDataReader
     public class RawRoleBonus
     {
         public double? bonus { get; set; }
+        public bool? isPositive { get; set; }
         public int? importance { get; set; }
         public int? unitID { get; set; }
         public Dictionary<string, string> bonusText { set; get; }

@@ -41,6 +41,7 @@ namespace EoiData.Helper
             eoiBlueprint.IncomePerUnit = 0;
 
             eoiBlueprint.ExpectedProfitPerHour = 0;
+            eoiBlueprint.ExpectedOptimalProfitPerHour = 0;
 
             eoiBlueprint.Taxes = 0;
 
@@ -64,7 +65,12 @@ namespace EoiData.Helper
             if (!SettingsInterface.GlobalSettings.EnableAutoUpdater)
                 return;
 
-            var solarSystemCostIndices = EsiDataInterface.GetSolarSystemCostIndices(SolarSystems.Miakie.SolarSysteId);
+            var optimalProfit = (SettingsInterface.GlobalSettings.ProfitPerHourForPrice / 3600) * manufacturingTime;
+            var solarSystemCostIndices = EsiDataInterface.GetSolarSystemCostIndices(SolarSystems.Vashkah.SolarSysteId);
+            //var solarSystemCostIndices = EsiDataInterface.GetSolarSystemCostIndices(SolarSystems.Bika.SolarSysteId);
+            // var solarSystemCostIndices = EsiDataInterface.GetSolarSystemCostIndices(SolarSystems.Jerma.SolarSysteId);
+            // var solarSystemCostIndices = EsiDataInterface.GetSolarSystemCostIndices(SolarSystems.Irnal.SolarSysteId);
+
             if (solarSystemCostIndices == null)
                 return;
 
@@ -296,34 +302,44 @@ namespace EoiData.Helper
                 eoiBlueprint.ExpensesPerUnit = investment / productQuantity;
                 eoiBlueprint.ExpensesPerUnitJita = investmentJita / productQuantity;
                 eoiBlueprint.IncomePerUnit = income / productQuantity;
+                var optimalProfitPerUnit = optimalProfit / productQuantity;
                 eoiBlueprint.ProfitPerUnit = profit / productQuantity;
                 
-                
-
                 var history = blueprint.Products[0].GetMarketHistory();
                 if (history != null)
                 {
                     if (history.UnitsPerSecond <= 0 || productQuantity <= 0)
+                    {
                         eoiBlueprint.ExpectedProfitPerHour = 0;
+                        eoiBlueprint.ExpectedOptimalProfitPerHour = 0;
+                    }
                     else
                     {
                         var manufacturingTimePerUnit = manufacturingTime / productQuantity;
                         if (manufacturingTimePerUnit <= 0)
+                        {
                             eoiBlueprint.ExpectedProfitPerHour = 0;
+                            eoiBlueprint.ExpectedOptimalProfitPerHour = 0;
+                        }
+                            
                         else
-                            eoiBlueprint.ExpectedProfitPerHour = ((eoiBlueprint.ProfitPerUnit / manufacturingTimePerUnit) * history.UnitsPerSecond) * 3600;
+                        {
+                            eoiBlueprint.ExpectedProfitPerHour = (eoiBlueprint.ProfitPerUnit * history.UnitsPerSecond) * 3600;
+                            eoiBlueprint.ExpectedOptimalProfitPerHour = (Math.Min(optimalProfitPerUnit, eoiBlueprint.ProfitPerUnit) * history.UnitsPerSecond) * 3600;
+                        }
                     }
                 }
                 else
                 {
                     eoiBlueprint.ExpectedProfitPerHour = 0;
+                    eoiBlueprint.ExpectedOptimalProfitPerHour = 0;
                 }
             }
             
             eoiBlueprint.ProfitPerHour = (profit / manufacturingTime) * 3600;
             eoiBlueprint.ExpensesPerHour = (investment / manufacturingTime) * 3600;
             eoiBlueprint.IncomePerHour = (income / manufacturingTime) * 3600;
-            var optimalProfit = (200000 / 3600) * manufacturingTime;
+            
 
             if (blueprint.Products.Count == 1)
             {
@@ -348,8 +364,8 @@ namespace EoiData.Helper
                 }
             }
 
-            if (eoiBlueprint.ExpectedProfitPerHour > eoiBlueprint.ProfitPerHour)
-                eoiBlueprint.ExpectedProfitPerHour = eoiBlueprint.ProfitPerHour;
+            //if (eoiBlueprint.ExpectedProfitPerHour > eoiBlueprint.ProfitPerHour)
+            //    eoiBlueprint.ExpectedProfitPerHour = eoiBlueprint.ProfitPerHour;
         }
     }
 }

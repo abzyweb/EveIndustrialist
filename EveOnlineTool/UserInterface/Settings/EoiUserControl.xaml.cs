@@ -49,7 +49,8 @@ namespace EveOnlineTool.UserInterface.Settings
             if (User == null || User.Authenticated)
                 return;
 
-            var url = @"http://yourUrlHere.com/EveOnline/Authentication/?action=start&guid=";
+            // var url = @"http://yourUrlHere.com/EveOnline/Authentication/?action=start&guid=";
+            var url = @"http://www.mobilies.at/EveOnline/Authentication/?action=start&guid=";
             _guid = Guid.NewGuid();
             url += WebUtility.UrlEncode(_guid.ToString());
 

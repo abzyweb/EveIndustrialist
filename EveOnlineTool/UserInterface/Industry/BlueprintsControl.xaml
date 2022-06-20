@@ -27,6 +27,8 @@
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
                     <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Column="0" Content="Kaufbare Blueprints:" />
@@ -37,8 +39,10 @@
                 <CheckBox Name="CorporationOwnedBlueprintsCheckBox" IsChecked="False" Grid.Column="5" VerticalAlignment="Center" Checked="CorporationOwnedChanged" Unchecked="CorporationOwnedChanged" />
                 <Label Grid.Column="6" Content="Erfindbar:" Margin="15,0,0,0" />
                 <CheckBox Name="InventableBlueprintsCheckBox" IsChecked="False" Grid.Column="7" VerticalAlignment="Center" Checked="InventableChanged" Unchecked="InventableChanged" />
+                <Label Grid.Column="8" Content="Markt:" Margin="15,0,0,0" />
+                <CheckBox Name="MarketBlueprintsCheckBox" IsChecked="False" Grid.Column="9" VerticalAlignment="Center" Checked="MarketChanged" Unchecked="MarketChanged" />
                 
-                <DockPanel Grid.Row="1" Grid.ColumnSpan="8" LastChildFill="True">
+                <DockPanel Grid.Row="1" Grid.ColumnSpan="10" LastChildFill="True">
                     <Label Content="Suche" DockPanel.Dock="Left" />
                     <TextBox Name="SearchTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Center" TextChanged="SearchTextChanged" />
                 </DockPanel>
@@ -61,12 +65,14 @@
                 <DataGridTextColumn Header="Name" Binding="{Binding Path=Name, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Width="*" />
                 <DataGridTextColumn Header="Profit / Stunde" Binding="{Binding Path=ProfitPerHour, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}"/>
                 <DataGridTextColumn Header="Est. Profit / Stunde" Binding="{Binding Path=ExpectedProfitPerHour, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}"/>
+                <DataGridTextColumn Header="Est. Opt. Profit / Stunde" Binding="{Binding Path=ExpectedOptimalProfitPerHour, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}"/>
                 <DataGridTextColumn Header="Ausgaben / Einheit" Binding="{Binding Path=ExpensesPerUnit, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}"/>
                 <DataGridTextColumn Header="Ausgaben / Einheit (Jita)" Binding="{Binding Path=ExpensesPerUnitJita, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}"/>
                 <DataGridTextColumn Header="Einnahmen / Einheit" Binding="{Binding Path=IncomePerUnit, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}"/>
                 <DataGridTextColumn Header="Empf. Preis / Einheit" Binding="{Binding Path=OptimalMarketPrice, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N2}"/>
                 <DataGridTextColumn Header="ME" Binding="{Binding Path=MaterialEfficency, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N0}" />
                 <DataGridTextColumn Header="TE" Binding="{Binding Path=TimeEfficency, Mode=OneWay, UpdateSourceTrigger=PropertyChanged, StringFormat=N0}" />
+                <DataGridCheckBoxColumn Header="Erfindbar" Binding="{Binding Path=Inventable, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                 <DataGridCheckBoxColumn Header="Besitz" Binding="{Binding Path=Owned, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                 <DataGridCheckBoxColumn Header="Corp. Besitz" Binding="{Binding Path=CorporationOwned, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
                 <DataGridCheckBoxColumn Header="Market" Binding="{Binding Path=HasCharacterOrders, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />

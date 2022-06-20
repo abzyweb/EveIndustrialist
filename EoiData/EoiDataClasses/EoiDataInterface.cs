@@ -140,6 +140,14 @@ namespace EoiData.EoiDataClasses
             return false;
         }
 
+        internal static void UpdateAllBlueprintEfficencies()
+        {
+            foreach (var bp in GetBlueprints())
+            {
+                bp.UpdateBlueprintEfficencies();
+            }
+        }
+
         internal static bool AcceptContract(EoiContract eoiContract, int selectedVolume)
         {
             var contract = _eoiDataContracts.FirstOrDefault(x => Equals(x.GetEoiContract(), eoiContract));
@@ -467,6 +475,9 @@ namespace EoiData.EoiDataClasses
 
         internal static bool SynchronizeCorporationContracts()
         {
+            if (!SettingsInterface.GlobalSettings.EnableCorporationContractsUpdates)
+                return false;
+
             var updated = false;
 
             var users = GetUsers();

@@ -38,8 +38,10 @@ namespace EoiData.EoiClasses
         private decimal _expensesPerUnitJita;
         private decimal _incomePerUnit;
         private decimal _expectedProfitPerHour;
+        private decimal _expectedOptimalProfitPerHour;
         private decimal _taxes;
         private decimal _price;
+        private decimal _parentPrice;
         private bool _private;
 
         public int Id { get; internal set; }
@@ -66,7 +68,7 @@ namespace EoiData.EoiClasses
             }
         }
         public bool Owned { get { return _owned; } set { _owned = value; OnPropertyChanged("Owned"); } }
-
+        
         public decimal ProfitPerHour
         {
             get { return _profitPerHour; }
@@ -110,15 +112,19 @@ namespace EoiData.EoiClasses
         public decimal ExpensesPerUnitJita { get => _expensesPerUnitJita; internal set => _expensesPerUnitJita = value; }
         public decimal IncomePerUnit { get => _incomePerUnit; internal set => _incomePerUnit = value; }
         public decimal ExpectedProfitPerHour { get => _expectedProfitPerHour; internal set => _expectedProfitPerHour = value; }
+        public decimal ExpectedOptimalProfitPerHour { get => _expectedOptimalProfitPerHour; internal set => _expectedOptimalProfitPerHour = value; }
         public decimal Taxes { get => _taxes; internal set => _taxes = value; }
         public decimal Price { get => _price; internal set => _price = value; }
+        public decimal ParentPrice { get => _parentPrice; internal set => _parentPrice = value; }
         public decimal BuyPrice { get; set; }
         public decimal SellPrice { get; set; }
         public decimal OptimalPrice { get; set; }
         public decimal OptimalMarketPrice { get; set; }
         public bool CorporationOwned { get; set; }
         public bool Inventable { get; set; }
+        public bool HasParent { get; set; }
         public bool HasCharacterOrders { get; set; }
+        
 
         public EoiBlueprint()
         {
@@ -137,6 +143,7 @@ namespace EoiData.EoiClasses
             OnPropertyChanged("HasCharacterOrders");
             OnPropertyChanged("IsCopy");
             OnPropertyChanged("Price");
+            OnPropertyChanged("ParentPrice");
             OnPropertyChanged("Taxes");
             OnPropertyChanged("ExpectedProfitPerHour");
             OnPropertyChanged("IncomePerUnit");
@@ -165,6 +172,10 @@ namespace EoiData.EoiClasses
             OnPropertyChanged("OptimalPrice");
             OnPropertyChanged("OptimalMarketPrice");
             OnPropertyChanged("Inventable");
+            OnPropertyChanged("HasParent");
+
+            // OnPropertyChanged("MaterialEfficency");
+            // OnPropertyChanged("TimeEfficency");
 
             foreach (var material in Materials)
                 material.InvokePropertyChanged();

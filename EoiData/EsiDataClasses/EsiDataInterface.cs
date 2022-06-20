@@ -17,7 +17,8 @@ namespace EoiData.EsiDataClasses
         private static List<EsiDataPrice> _prices;
         private static List<EsiDataSolarSystemCostIndices> _systemCostIndices;
         private static List<EsiDataMarketHistory> _marketHistory;
-        private static List<EsiDataMarketOrders> _marketOrders;
+        private static Dictionary<string, List<EsiDataMarketOrders>> _marketOrders;
+        // private static List<EsiDataMarketOrders> _marketOrders;
         private static List<EsiDataBlueprint> _blueprints;
         private static List<EsiDataSolarSystem> _solarSystems;
 
@@ -62,7 +63,7 @@ namespace EoiData.EsiDataClasses
         private static void InitializeMarketOrders()
         {
             if (_marketOrders == null)
-                _marketOrders = new List<EsiDataMarketOrders>();
+                _marketOrders = new Dictionary<string, List<EsiDataMarketOrders>>();
         }
 
         internal static RawEsiVerify Verify(string access_token)
@@ -153,14 +154,21 @@ namespace EoiData.EsiDataClasses
                 marketOrders = EveSwaggerInterface.GetMarketOrders(asset.Id, region);
                 if (marketOrders != null)
                 {
-                    var esiDataMarketOrders = _marketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
+                    var hasRegionalMarketOrders = _marketOrders.TryGetValue(marketOrders.regionId, out var regionalMarketOrders);
+                    if (!hasRegionalMarketOrders)
+                    {
+                        regionalMarketOrders = new List<EsiDataMarketOrders>();
+                        _marketOrders.Add(marketOrders.regionId, regionalMarketOrders);
+                    }
+
+                    var esiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
                     if (esiDataMarketOrders == null)
                     {
-                        var oldEsiDataMarketOrders = _marketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId && x.Region == marketOrders.regionId);
+                        var oldEsiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId);
                         if (oldEsiDataMarketOrders != null)
-                            _marketOrders.Remove(oldEsiDataMarketOrders);
+                            regionalMarketOrders.Remove(oldEsiDataMarketOrders);
 
-                        _marketOrders.Add(new EsiDataMarketOrders(marketOrders));
+                        regionalMarketOrders.Add(new EsiDataMarketOrders(marketOrders));
                     }
                 }
             }
@@ -177,14 +185,21 @@ namespace EoiData.EsiDataClasses
                     marketOrders = EveSwaggerInterface.GetMarketOrders(blueprint.Id, region);
                     if (marketOrders != null)
                     {
-                        var esiDataMarketOrders = _marketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
+                        var hasRegionalMarketOrders = _marketOrders.TryGetValue(marketOrders.regionId, out var regionalMarketOrders);
+                        if (!hasRegionalMarketOrders)
+                        {
+                            regionalMarketOrders = new List<EsiDataMarketOrders>();
+                            _marketOrders.Add(marketOrders.regionId, regionalMarketOrders);
+                        }
+
+                        var esiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
                         if (esiDataMarketOrders == null)
                         {
-                            var oldEsiDataMarketOrders = _marketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId && x.Region == marketOrders.regionId);
+                            var oldEsiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId);
                             if (oldEsiDataMarketOrders != null)
-                                _marketOrders.Remove(oldEsiDataMarketOrders);
+                                regionalMarketOrders.Remove(oldEsiDataMarketOrders);
 
-                            _marketOrders.Add(new EsiDataMarketOrders(marketOrders));
+                            regionalMarketOrders.Add(new EsiDataMarketOrders(marketOrders));
                         }
                     }
                 }
@@ -198,14 +213,21 @@ namespace EoiData.EsiDataClasses
                     marketOrders = EveSwaggerInterface.GetMarketOrders(materials.Id, region);
                     if (marketOrders != null)
                     {
-                        var esiDataMarketOrders = _marketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
+                        var hasRegionalMarketOrders = _marketOrders.TryGetValue(marketOrders.regionId, out var regionalMarketOrders);
+                        if (!hasRegionalMarketOrders)
+                        {
+                            regionalMarketOrders = new List<EsiDataMarketOrders>();
+                            _marketOrders.Add(marketOrders.regionId, regionalMarketOrders);
+                        }
+
+                        var esiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
                         if (esiDataMarketOrders == null)
                         {
-                            var oldEsiDataMarketOrders = _marketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId && x.Region == marketOrders.regionId);
+                            var oldEsiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId);
                             if (oldEsiDataMarketOrders != null)
-                                _marketOrders.Remove(oldEsiDataMarketOrders);
+                                regionalMarketOrders.Remove(oldEsiDataMarketOrders);
 
-                            _marketOrders.Add(new EsiDataMarketOrders(marketOrders));
+                            regionalMarketOrders.Add(new EsiDataMarketOrders(marketOrders));
                         }
                     }
 
@@ -214,14 +236,21 @@ namespace EoiData.EsiDataClasses
                         marketOrders = EveSwaggerInterface.GetMarketOrders(materials.Id, Regions.TheForge);
                         if (marketOrders != null)
                         {
-                            var esiDataMarketOrders = _marketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
+                            var hasRegionalMarketOrders = _marketOrders.TryGetValue(marketOrders.regionId, out var regionalMarketOrders);
+                            if (!hasRegionalMarketOrders)
+                            {
+                                regionalMarketOrders = new List<EsiDataMarketOrders>();
+                                _marketOrders.Add(marketOrders.regionId, regionalMarketOrders);
+                            }
+
+                            var esiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
                             if (esiDataMarketOrders == null)
                             {
-                                var oldEsiDataMarketOrders = _marketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId && x.Region == marketOrders.regionId);
+                                var oldEsiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId);
                                 if (oldEsiDataMarketOrders != null)
-                                    _marketOrders.Remove(oldEsiDataMarketOrders);
+                                    regionalMarketOrders.Remove(oldEsiDataMarketOrders);
 
-                                _marketOrders.Add(new EsiDataMarketOrders(marketOrders));
+                                regionalMarketOrders.Add(new EsiDataMarketOrders(marketOrders));
                             }
                         }
                     }
@@ -236,14 +265,21 @@ namespace EoiData.EsiDataClasses
                     marketOrders = EveSwaggerInterface.GetMarketOrders(product.Id, region);
                     if (marketOrders != null)
                     {
-                        var esiDataMarketOrders = _marketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
+                        var hasRegionalMarketOrders = _marketOrders.TryGetValue(marketOrders.regionId, out var regionalMarketOrders);
+                        if (!hasRegionalMarketOrders)
+                        {
+                            regionalMarketOrders = new List<EsiDataMarketOrders>();
+                            _marketOrders.Add(marketOrders.regionId, regionalMarketOrders);
+                        }
+
+                        var esiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
                         if (esiDataMarketOrders == null)
                         {
-                            var oldEsiDataMarketOrders = _marketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId && x.Region == marketOrders.regionId);
+                            var oldEsiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId);
                             if (oldEsiDataMarketOrders != null)
-                                _marketOrders.Remove(oldEsiDataMarketOrders);
+                                regionalMarketOrders.Remove(oldEsiDataMarketOrders);
 
-                            _marketOrders.Add(new EsiDataMarketOrders(marketOrders));
+                            regionalMarketOrders.Add(new EsiDataMarketOrders(marketOrders));
                         }
                     }
 
@@ -252,14 +288,21 @@ namespace EoiData.EsiDataClasses
                         marketOrders = EveSwaggerInterface.GetMarketOrders(product.Id, Regions.TheForge);
                         if (marketOrders != null)
                         {
-                            var esiDataMarketOrders = _marketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
+                            var hasRegionalMarketOrders = _marketOrders.TryGetValue(marketOrders.regionId, out var regionalMarketOrders);
+                            if (!hasRegionalMarketOrders)
+                            {
+                                regionalMarketOrders = new List<EsiDataMarketOrders>();
+                                _marketOrders.Add(marketOrders.regionId, regionalMarketOrders);
+                            }
+
+                            var esiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => Equals(x.Orders, marketOrders));
                             if (esiDataMarketOrders == null)
                             {
-                                var oldEsiDataMarketOrders = _marketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId && x.Region == marketOrders.regionId);
+                                var oldEsiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => x.Id == marketOrders.typeId);
                                 if (oldEsiDataMarketOrders != null)
-                                    _marketOrders.Remove(oldEsiDataMarketOrders);
+                                    regionalMarketOrders.Remove(oldEsiDataMarketOrders);
 
-                                _marketOrders.Add(new EsiDataMarketOrders(marketOrders));
+                                regionalMarketOrders.Add(new EsiDataMarketOrders(marketOrders));
                             }
                         }
                     }
@@ -327,10 +370,19 @@ namespace EoiData.EsiDataClasses
                 return;
 
             if (_marketOrders == null)
-                _marketOrders = new List<EsiDataMarketOrders>();
+                _marketOrders = new Dictionary<string, List<EsiDataMarketOrders>>();
 
             foreach (var h in orders)
-                _marketOrders.Add(h);
+            {
+                var hasRegionalMarketOrders = _marketOrders.TryGetValue(h.Region, out var regionalMarketOrders);
+                if (!hasRegionalMarketOrders)
+                {
+                    regionalMarketOrders = new List<EsiDataMarketOrders>();
+                    _marketOrders.Add(h.Region, regionalMarketOrders);
+                }
+                regionalMarketOrders.Add(h);
+            }
+                
 
             EveSwaggerInterface.AddMarketOrders(orders.Select(x => x.Orders).ToList());
         }
@@ -353,7 +405,12 @@ namespace EoiData.EsiDataClasses
 
         internal static List<EsiDataMarketOrders> ExportMarketOrders()
         {
-            return _marketOrders;
+            var result = new List<EsiDataMarketOrders>();
+
+            foreach (var order in _marketOrders)
+                result.AddRange(order.Value);
+
+            return result;
         }
 
         internal static EsiDataPrice GetPriceById(int id)
@@ -402,7 +459,14 @@ namespace EoiData.EsiDataClasses
             if (_marketOrders == null)
                 return null;
 
-            var esiDataMarketOrders = _marketOrders.FirstOrDefault(x => x.Id == id && x.Region == region);
+            var hasRegionalMarketOrders = _marketOrders.TryGetValue(region, out var regionalMarketOrders);
+            if (!hasRegionalMarketOrders)
+            {
+                regionalMarketOrders = new List<EsiDataMarketOrders>();
+                _marketOrders.Add(region, regionalMarketOrders);
+            }
+
+            var esiDataMarketOrders = regionalMarketOrders.FirstOrDefault(x => x.Id == id);
 
             return esiDataMarketOrders;
         }

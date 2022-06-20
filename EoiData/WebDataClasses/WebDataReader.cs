@@ -17,7 +17,8 @@ namespace EoiData.WebDataClasses
     {
         internal static string GetAuthenticationCode(Guid guid)
         {
-            var server = @"http://yourUrlHere.com/EveOnline/Authentication/?";
+            // var server = @"http://yourUrlHere.com/EveOnline/Authentication/?";
+            var server = @"http://www.mobilies.at/EveOnline/Authentication/?";
 
             using (var client = new HttpClient())
             {
@@ -44,7 +45,8 @@ namespace EoiData.WebDataClasses
         internal static bool GetVersionValidation(string version)
         {
             
-            var server = @"http://yourUrlHere.com/EveOnline/Authentication/versionCheck.php?";
+            // var server = @"http://yourUrlHere.com/EveOnline/Authentication/versionCheck.php?";
+            var server = @"http://www.mobilies.at/EveOnline/Authentication/versionCheck.php?";
 
             using (var client = new HttpClient())
             {

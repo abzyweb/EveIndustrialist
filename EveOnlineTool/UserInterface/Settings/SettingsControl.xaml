@@ -26,6 +26,7 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto" />
@@ -52,14 +53,17 @@
                 <Label Grid.Row="2" Grid.Column="2" Content="Blueprints synchronisieren (Eve Online)" VerticalAlignment="Center" />
                 <CheckBox Name="EnableEsiBlueprintsUpdatesCheckBox" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" Checked="EnableEsiBlueprintsUpdatesChanged" Unchecked="EnableEsiBlueprintsUpdatesChanged" IsEnabled="{Binding ElementName=EnableAutoUpdaterCheckBox, Path=IsChecked, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
 
-                <Label Grid.Row="3" Grid.Column="0" Content="Corporation Server" VerticalAlignment="Center" />
-                <TextBox Name="CorporationServerTextBox" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" IsEnabled="False" />
+                <Label Grid.Row="3" Grid.Column="0" Content="Contracts synchronisieren (Corporation)" VerticalAlignment="Center" />
+                <CheckBox Name="EnableCorporationContractsUpdatesCheckBox" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Checked="EnableCorporationContractsUpdatesChanged" Unchecked="EnableCorporationBlueprintsUpdatesChanged" IsEnabled="{Binding ElementName=EnableAutoUpdaterCheckBox, Path=IsChecked, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
 
-                <Label Grid.Row="4" Grid.Column="0" Content="Allianz Server" VerticalAlignment="Center" />
-                <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" IsEnabled="False" />
+                <Label Grid.Row="4" Grid.Column="0" Content="Corporation Server" VerticalAlignment="Center" />
+                <TextBox Name="CorporationServerTextBox" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" IsEnabled="False" />
 
-                <Label Visibility="Collapsed" Grid.Row="5" Grid.Column="0" Content="BPCs anzeigen" VerticalAlignment="Center" />
-                <CheckBox Visibility="Collapsed" Grid.Row="5" Grid.Column="1" Name="ShowBlueprintCopiesCheckBox" VerticalAlignment="Center" Checked="ShowBlueprintCopiesChanged" Unchecked="ShowBlueprintCopiesChanged" />
+                <Label Grid.Row="5" Grid.Column="0" Content="Allianz Server" VerticalAlignment="Center" />
+                <TextBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" VerticalAlignment="Center" IsEnabled="False" />
+
+                <Label Visibility="Collapsed" Grid.Row="6" Grid.Column="0" Content="BPCs anzeigen" VerticalAlignment="Center" />
+                <CheckBox Visibility="Collapsed" Grid.Row="6" Grid.Column="1" Name="ShowBlueprintCopiesCheckBox" VerticalAlignment="Center" Checked="ShowBlueprintCopiesChanged" Unchecked="ShowBlueprintCopiesChanged" />
             </Grid>
         </GroupBox>
 

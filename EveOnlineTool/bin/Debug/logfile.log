@@ -1374,3 +1374,955 @@ StackTrace :    bei CorporationWebConnection.CorporationWebInterface.SetBlueprin
    bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
    bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
    bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 20.05.2022 09:22:54
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (1,2).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.WebDataClasses.WebDataReader.GetVersionValidation(String version) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataReader.cs:Zeile 63.
+   bei EoiData.WebDataClasses.WebDataInterface.IsVersionValid(String version) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.IsVersionValid(String version) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 189.
+   bei EveOnlineTool.Splash.Splash_Loaded(Object sender, RoutedEventArgs e) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\Splash.xaml.cs:Zeile 78.
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   bei System.Windows.BroadcastEventHelper.BroadcastEvent(DependencyObject root, RoutedEvent routedEvent)
+   bei System.Windows.BroadcastEventHelper.BroadcastLoadedEvent(Object root)
+   bei MS.Internal.LoadedOrUnloadedOperation.DoWork()
+   bei System.Windows.Media.MediaContext.FireLoadedPendingCallbacks()
+   bei System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks()
+   bei System.Windows.Media.MediaContext.RenderMessageHandlerCore(Object resizedCompositionTarget)
+   bei System.Windows.Media.MediaContext.RenderMessageHandler(Object resizedCompositionTarget)
+   bei System.Windows.Media.MediaContext.Resize(ICompositionTarget resizedCompositionTarget)
+   bei System.Windows.Interop.HwndTarget.OnResize()
+   bei System.Windows.Interop.HwndTarget.HandleMessage(WindowMessage msg, IntPtr wparam, IntPtr lparam)
+   bei System.Windows.Interop.HwndSource.HwndTargetFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.HwndSubclass.DefWndProcWrapper(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+System.InvalidOperationException
+Message : <html xmlns=''> wurde nicht erwartet.
+StackTrace :    bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderRawWebDataAuthentication.Read4_request()
+-----------------------------------------------------------------------------
+Date : 20.05.2022 09:22:54
+
+System.InvalidOperationException
+Message : <html xmlns=''> wurde nicht erwartet.
+StackTrace :    bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderRawWebDataAuthentication.Read4_request()
+-----------------------------------------------------------------------------
+Date : 20.05.2022 09:24:55
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (1,2).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.WebDataClasses.WebDataReader.GetVersionValidation(String version) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataReader.cs:Zeile 63.
+   bei EoiData.WebDataClasses.WebDataInterface.IsVersionValid(String version) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\WebDataClasses\WebDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.IsVersionValid(String version) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 189.
+   bei EveOnlineTool.Splash.Splash_Loaded(Object sender, RoutedEventArgs e) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\Splash.xaml.cs:Zeile 78.
+   bei System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   bei System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   bei System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   bei System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   bei System.Windows.BroadcastEventHelper.BroadcastEvent(DependencyObject root, RoutedEvent routedEvent)
+   bei System.Windows.BroadcastEventHelper.BroadcastLoadedEvent(Object root)
+   bei MS.Internal.LoadedOrUnloadedOperation.DoWork()
+   bei System.Windows.Media.MediaContext.FireLoadedPendingCallbacks()
+   bei System.Windows.Media.MediaContext.FireInvokeOnRenderCallbacks()
+   bei System.Windows.Media.MediaContext.RenderMessageHandlerCore(Object resizedCompositionTarget)
+   bei System.Windows.Media.MediaContext.RenderMessageHandler(Object resizedCompositionTarget)
+   bei System.Windows.Media.MediaContext.Resize(ICompositionTarget resizedCompositionTarget)
+   bei System.Windows.Interop.HwndTarget.OnResize()
+   bei System.Windows.Interop.HwndTarget.HandleMessage(WindowMessage msg, IntPtr wparam, IntPtr lparam)
+   bei System.Windows.Interop.HwndSource.HwndTargetFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   bei MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   bei System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   bei System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   bei System.Windows.Threading.Dispatcher.LegacyInvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Int32 numArgs)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.HwndSubclass.DefWndProcWrapper(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.UnsafeNativeMethods.CallWindowProc(IntPtr wndProc, IntPtr hWnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   bei MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+System.InvalidOperationException
+Message : <html xmlns=''> wurde nicht erwartet.
+StackTrace :    bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderRawWebDataAuthentication.Read4_request()
+-----------------------------------------------------------------------------
+Date : 20.05.2022 09:24:55
+
+System.InvalidOperationException
+Message : <html xmlns=''> wurde nicht erwartet.
+StackTrace :    bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderRawWebDataAuthentication.Read4_request()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 10:18:46
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (17786979,19).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ImportMarketHistory() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataReader.cs:Zeile 50.
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataInterface.cs:Zeile 36.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 17786979, Position 19.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadEndElement()
+   bei System.Xml.Serialization.XmlSerializationReader.ReadEndElement()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiPriceHistoryEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketHistory(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketHistory()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 10:18:46
+
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 17786979, Position 19.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadEndElement()
+   bei System.Xml.Serialization.XmlSerializationReader.ReadEndElement()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiPriceHistoryEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketHistory(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketHistory()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 10:19:37
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (17786979,19).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ImportMarketHistory() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataReader.cs:Zeile 50.
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataInterface.cs:Zeile 36.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 17786979, Position 19.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadEndElement()
+   bei System.Xml.Serialization.XmlSerializationReader.ReadEndElement()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiPriceHistoryEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketHistory(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketHistory()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 10:19:37
+
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 17786979, Position 19.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadEndElement()
+   bei System.Xml.Serialization.XmlSerializationReader.ReadEndElement()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiPriceHistoryEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketHistory(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketHistory()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 10:21:25
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (17786979,19).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ImportMarketHistory() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataReader.cs:Zeile 50.
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataInterface.cs:Zeile 36.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 17786979, Position 19.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadEndElement()
+   bei System.Xml.Serialization.XmlSerializationReader.ReadEndElement()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiPriceHistoryEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketHistory(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketHistory()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 10:21:25
+
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 17786979, Position 19.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.Throw(Int32 pos, String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ParseElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadEndElement()
+   bei System.Xml.Serialization.XmlSerializationReader.ReadEndElement()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiPriceHistoryEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketHistory(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketHistory()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 12:58:19
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (250935,9).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ImportMarketOrders() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataReader.cs:Zeile 74.
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataInterface.cs:Zeile 38.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 250935, Position 9.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   bei System.Xml.XmlTextReaderImpl.ParseEndElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadElementString()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiMarketOrderEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketOrders(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketOrders()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 12:58:19
+
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 250935, Position 9.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   bei System.Xml.XmlTextReaderImpl.ParseEndElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadElementString()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiMarketOrderEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketOrders(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketOrders()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 12:58:48
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (250935,9).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ImportMarketOrders() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataReader.cs:Zeile 74.
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataInterface.cs:Zeile 38.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 250935, Position 9.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   bei System.Xml.XmlTextReaderImpl.ParseEndElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadElementString()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiMarketOrderEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketOrders(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketOrders()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 12:58:48
+
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 250935, Position 9.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   bei System.Xml.XmlTextReaderImpl.ParseEndElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadElementString()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiMarketOrderEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketOrders(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketOrders()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 12:59:21
+
+System.InvalidOperationException
+Message : Fehler im XML-Dokument (250935,9).
+StackTrace :    bei System.Xml.Serialization.XmlSerializer.Deserialize(XmlReader xmlReader, String encodingStyle, XmlDeserializationEvents events)
+   bei System.Xml.Serialization.XmlSerializer.Deserialize(TextReader textReader)
+   bei EoiData.FileSystemDataClasses.FileSystemDataReader.ImportMarketOrders() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataReader.cs:Zeile 74.
+   bei EoiData.FileSystemDataClasses.FileSystemDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\FileSystemDataClasses\FileSystemDataInterface.cs:Zeile 38.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 36.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 250935, Position 9.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   bei System.Xml.XmlTextReaderImpl.ParseEndElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadElementString()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiMarketOrderEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketOrders(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketOrders()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 12:59:21
+
+System.Xml.XmlException
+Message : Unerwartetes Ende der Datei bei der Syntaxanalyse von Name. Zeile 250935, Position 9.
+StackTrace :    bei System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   bei System.Xml.XmlTextReaderImpl.Throw(String res, String arg)
+   bei System.Xml.XmlTextReaderImpl.ParseQName(Boolean isQName, Int32 startOffset, Int32& colonPos)
+   bei System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   bei System.Xml.XmlTextReaderImpl.ParseEndElement()
+   bei System.Xml.XmlTextReaderImpl.ParseElementContent()
+   bei System.Xml.XmlTextReaderImpl.Read()
+   bei System.Xml.XmlTextReader.Read()
+   bei System.Xml.XmlReader.ReadElementString()
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read2_RawEsiMarketOrderEntry(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read3_EsiDataMarketOrders(Boolean isNullable, Boolean checkType)
+   bei Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderList1.Read4_ArrayOfEsiDataMarketOrders()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 13:41:53
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1947, Col: 5, Idx: 84906) - (Line: 1947, Col: 5, Idx: 84906): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 52.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 13:41:53
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:43:23
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1947, Col: 5, Idx: 84906) - (Line: 1947, Col: 5, Idx: 84906): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 52.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:43:23
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:44:02
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1947, Col: 5, Idx: 84906) - (Line: 1947, Col: 5, Idx: 84906): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 52.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:44:02
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:44:39
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1947, Col: 5, Idx: 84906) - (Line: 1947, Col: 5, Idx: 84906): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 52.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:44:39
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:45:03
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1947, Col: 5, Idx: 84906) - (Line: 1947, Col: 5, Idx: 84906): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 52.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:45:04
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:46:13
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1947, Col: 5, Idx: 84906) - (Line: 1947, Col: 5, Idx: 84906): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 52.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 15:46:13
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 16:13:01
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei CorporationWebConnection.CorporationWebInterface.GetBlueprints(String username, String owner) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 166.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 578.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeBlueprints() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 160.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 54.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:30:18
+
+System.InvalidOperationException
+Message : Failed to load static types
+StackTrace :    bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 47.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:31:34
+
+System.InvalidOperationException
+Message : Failed to load static types
+StackTrace :    bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 48.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:32:53
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1947, Col: 5, Idx: 84906) - (Line: 1947, Col: 5, Idx: 84906): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 54.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:32:53
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'metaGroupID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:33:40
+
+YamlDotNet.Core.YamlException
+Message : (Line: 1, Col: 1, Idx: 0) - (Line: 1, Col: 4, Idx: 3): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes()
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init()
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init()
+   bei EoiData.EoiClasses.EoiInterface.Init()
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseUInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   bei YamlDotNet.Serialization.NodeDeserializers.ScalarNodeDeserializer.DeserializeIntegerHelper(TypeCode typeCode, String value)
+   bei YamlDotNet.Serialization.NodeDeserializers.ScalarNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:33:40
+
+System.FormatException
+Message : Die Eingabezeichenfolge hat das falsche Format.
+StackTrace :    bei System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   bei System.Number.ParseUInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   bei YamlDotNet.Serialization.NodeDeserializers.ScalarNodeDeserializer.DeserializeIntegerHelper(TypeCode typeCode, String value)
+   bei YamlDotNet.Serialization.NodeDeserializers.ScalarNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:33:58
+
+YamlDotNet.Core.YamlException
+Message : (Line: 6470, Col: 5, Idx: 248992) - (Line: 6470, Col: 5, Idx: 248992): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 54.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'variationParentTypeID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 23.05.2022 18:33:58
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'variationParentTypeID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:20:14
+
+YamlDotNet.Core.YamlException
+Message : (Line: 6470, Col: 5, Idx: 248992) - (Line: 6470, Col: 5, Idx: 248992): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 54.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'variationParentTypeID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:20:14
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'variationParentTypeID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTypeId'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:21:08
+
+YamlDotNet.Core.YamlException
+Message : (Line: 64088, Col: 9, Idx: 3003535) - (Line: 64088, Col: 9, Idx: 3003535): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 54.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'iconID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTraits'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:21:08
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'iconID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTraits'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:22:05
+
+YamlDotNet.Core.YamlException
+Message : (Line: 64088, Col: 9, Idx: 3003535) - (Line: 64088, Col: 9, Idx: 3003535): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 54.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'iconID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTraits'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:22:05
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'iconID' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawTraits'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:22:44
+
+YamlDotNet.Core.YamlException
+Message : (Line: 64090, Col: 13, Idx: 3003582) - (Line: 64090, Col: 13, Idx: 3003582): Exception during deserialization
+StackTrace :    bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.CollectionNodeDeserializer.DeserializeHelper(Type tItem, IParser parser, Func`3 nestedObjectDeserializer, IList result, Boolean canUpdate)
+   bei YamlDotNet.Serialization.NodeDeserializers.CollectionNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.<>c__DisplayClass3_0.<DeserializeValue>b__0(IParser r, Type t)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.DeserializeHelper(Type tKey, Type tValue, IParser parser, Func`3 nestedObjectDeserializer, IDictionary result)
+   bei YamlDotNet.Serialization.NodeDeserializers.DictionaryNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   bei YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   bei EoiData.StaticDataClasses.StaticDataReader.StaticDataReader.LoadTypes() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataReader.cs:Zeile 54.
+   bei EoiData.StaticDataClasses.StaticDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\StaticDataClasses\StaticDataInterface.cs:Zeile 16.
+   bei EoiData.EoiDataClasses.EoiDataInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 35.
+   bei EoiData.EoiClasses.EoiInterface.Init() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 25.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass0_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 10.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()
+System.Runtime.Serialization.SerializationException
+Message : Property 'isPositive' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawRoleBonus'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 24.05.2022 09:22:44
+
+System.Runtime.Serialization.SerializationException
+Message : Property 'isPositive' not found on type 'EoiData.StaticDataClasses.StaticDataReader.RawRoleBonus'.
+StackTrace :    bei YamlDotNet.Serialization.TypeInspectors.TypeInspectorSkeleton.GetProperty(Type type, Object container, String name, Boolean ignoreUnmatched)
+   bei YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   bei YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+-----------------------------------------------------------------------------
+Date : 25.05.2022 11:52:34
+
+System.NullReferenceException
+Message : Der Objektverweis wurde nicht auf eine Objektinstanz festgelegt.
+StackTrace :    bei CorporationWebConnection.CorporationWebInterface.GetContracts(String username) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\CorporationWebConnection\CorporationWebInterface.cs:Zeile 148.
+   bei EoiData.EoiDataClasses.EoiDataInterface.SynchronizeCorporationContracts() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiDataClasses\EoiDataInterface.cs:Zeile 477.
+   bei EoiData.Helper.BackgroundWorker.SynchronizeCorporationContracts() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 153.
+   bei EoiData.Helper.BackgroundWorker.Start(Thread mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\Helper\BackgroundWorker.cs:Zeile 72.
+   bei EoiData.EoiClasses.EoiInterface.StartBackgroundWorker(Object mainThread) in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\EoiClasses\EoiInterface.cs:Zeile 161.
+   bei EveOnlineIndustrialist.EoiThreadManager.EoiThread.<>c__DisplayClass1_0.<.ctor>b__0() in C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EveOnlineTool\EoiThreadManager\EoiThread.cs:Zeile 16.
+   bei System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   bei System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   bei System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   bei System.Threading.ThreadHelper.ThreadStart()

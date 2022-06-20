@@ -32,6 +32,7 @@ namespace EoiData.Helper
     {
         private static bool _stop;
         private static bool _calculateBlueprints;
+        private static bool _updateAllBlueprintEfficencies;
 
         internal static BackgroundWorkerStatus Status { get; set; }
         public static Thread MainThread { get; private set; }
@@ -105,6 +106,12 @@ namespace EoiData.Helper
                     {
                         CheckUserAccessTokens();
 
+                        if (_updateAllBlueprintEfficencies)
+                        {
+                            _updateAllBlueprintEfficencies = false;
+                            EoiDataInterface.UpdateAllBlueprintEfficencies();
+                            CheckUpdated(true, EoiInterface.BlueprintPropertyChanged);
+                        }
                         if (_calculateBlueprints)
                         {
                             Status = new BackgroundWorkerStatus("Berechne Blueprints", -1);
@@ -112,7 +119,7 @@ namespace EoiData.Helper
                             EoiDataInterface.CalculateAllBlueprints();
                             CheckUpdated(true, EoiInterface.BlueprintPropertyChanged);
                         }
-
+                        
                         if (EveSwaggerInterface.Working())
                         {
                             var state = EveSwaggerInterface.GetProgressState();
@@ -202,6 +209,11 @@ namespace EoiData.Helper
         public static void CalculateAllBlueprints()
         {
             _calculateBlueprints = true;
+        }
+
+        internal static void UpdateAllBlueprintEfficencies()
+        {
+            _updateAllBlueprintEfficencies = true;
         }
     }
 }

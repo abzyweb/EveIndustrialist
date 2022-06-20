@@ -33,6 +33,7 @@ namespace EveOnlineTool.UserInterface.Settings
             EnableMarketUpdatesCheckBox.IsChecked = SettingsInterface.GlobalSettings.EnableMarketerUpdates;
             EnableMarketHistoryUpdatesCheckBox.IsChecked = SettingsInterface.GlobalSettings.EnableMarketHistoryUpdates;
             EnableCorporationBlueprintsUpdatesCheckBox.IsChecked = SettingsInterface.GlobalSettings.EnableCorporationBlueprintsUpdates;
+            EnableCorporationContractsUpdatesCheckBox.IsChecked = SettingsInterface.GlobalSettings.EnableCorporationContractsUpdates;
             EnableEsiBlueprintsUpdatesCheckBox.IsChecked = SettingsInterface.GlobalSettings.EnableEsiBlueprintsUpdates;
             CorporationServerTextBox.Text = SettingsInterface.GlobalSettings.CorporationServer;
 
@@ -83,12 +84,15 @@ namespace EveOnlineTool.UserInterface.Settings
         {
             SettingsInterface.GlobalSettings.EnableCorporationBlueprintsUpdates = EnableCorporationBlueprintsUpdatesCheckBox.IsChecked.Value;
         }
-
+        private void EnableCorporationContractsUpdatesChanged(object sender, RoutedEventArgs e)
+        {
+            SettingsInterface.GlobalSettings.EnableCorporationContractsUpdates = EnableCorporationContractsUpdatesCheckBox.IsChecked.Value;
+        }
         private void EnableEsiBlueprintsUpdatesChanged(object sender, RoutedEventArgs e)
         {
             SettingsInterface.GlobalSettings.EnableEsiBlueprintsUpdates = EnableEsiBlueprintsUpdatesCheckBox.IsChecked.Value;
         }
-
+        
         private void EnableCalculationChanged(object sender, RoutedEventArgs e)
         {
             SettingsInterface.GlobalSettings.EnableCalculation = EnableCalculationCheckBox.IsChecked.Value;

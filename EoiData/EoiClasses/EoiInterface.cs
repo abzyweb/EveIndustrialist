@@ -218,7 +218,7 @@ namespace EoiData.EoiClasses
 
         public static void UpdateAllBlueprintEfficencies()
         {
-            
+            BackgroundWorker.UpdateAllBlueprintEfficencies();
         }
     }
 }

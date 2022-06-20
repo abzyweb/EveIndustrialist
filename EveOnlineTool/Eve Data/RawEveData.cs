@@ -45,12 +45,13 @@ namespace EveOnlineIndustrialist.EveData
         {
             var sdePath = "sde";
             var fsdPath = "fsd";
+            var versionPath = "new";
             var typeIDFile = "typeIDs.yaml";
             var blueprintFile = "blueprints.yaml";
 
             var assemblyLocation = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
 
-            var path = Path.Combine(assemblyLocation, sdePath, fsdPath, typeIDFile);
+            var path = Path.Combine(assemblyLocation, sdePath, fsdPath, versionPath, typeIDFile);
 
             var fileInfo = new FileInfo(path);
 
@@ -68,7 +69,7 @@ namespace EveOnlineIndustrialist.EveData
                 type.Value.typeID = type.Key;
             }
 
-            path = Path.Combine(assemblyLocation, sdePath, fsdPath, blueprintFile);
+            path = Path.Combine(assemblyLocation, sdePath, fsdPath, versionPath, blueprintFile);
 
             fileInfo = new FileInfo(path);
 

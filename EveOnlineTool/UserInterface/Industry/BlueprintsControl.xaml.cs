@@ -90,12 +90,34 @@ namespace EveOnlineTool.UserInterface.Industry
             if (CorporationOwnedBlueprintsCheckBox.IsChecked == true && blueprint.CorporationOwned)
                 subResult = true;
 
-            if (InventableBlueprintsCheckBox.IsChecked == true && blueprint.Inventable)
+            if (InventableBlueprintsCheckBox.IsChecked == true)
+            {
+                if (OwnedBlueprintsCheckBox.IsChecked == true)
+                {
+                    if (blueprint.Inventable)
+                        subResult = true;
+                }
+                else
+                {
+                    if (BuyableBlueprintsCheckBox.IsChecked == true)
+                    {
+                        if (blueprint.HasParent && blueprint.ParentPrice > 0)
+                            subResult = true;
+                    }
+                    else
+                    {
+                        if (blueprint.HasParent)
+                            subResult = true;
+                    }
+                }
+            }
+            if (MarketBlueprintsCheckBox.IsChecked == true && blueprint.HasCharacterOrders)
                 subResult = true;
 
             if (BuyableBlueprintsCheckBox.IsChecked == false &&
                 OwnedBlueprintsCheckBox.IsChecked == false &&
                 InventableBlueprintsCheckBox.IsChecked == false &&
+                MarketBlueprintsCheckBox.IsChecked == false &&
                 CorporationOwnedBlueprintsCheckBox.IsChecked == false)
                 return result;
             else
@@ -130,6 +152,10 @@ namespace EveOnlineTool.UserInterface.Industry
         }
 
         private void InventableChanged(object sender, RoutedEventArgs e)
+        {
+            BlueprintsCollectionView.Refresh();
+        }
+        private void MarketChanged(object sender, RoutedEventArgs e)
         {
             BlueprintsCollectionView.Refresh();
         }

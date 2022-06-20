@@ -17,24 +17,24 @@ namespace CorporationWebConnection
         {
             var registerRequest = new WebRegister(name);
             var result = registerRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
 
         public static bool LoginUser(string name)
         {
             var loginRequest = new WebLogin(name);
             var result = loginRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
 
         public static bool SetBlueprint(string username, CorporationWebBlueprint bp)
@@ -44,19 +44,19 @@ namespace CorporationWebConnection
             if (result == null)
                 return false;
 
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
 
         public static List<WebBlueprint> GetBlueprints(string username)
         {
             var getBlueprintRequest = new WebBlueprints(WebRequestType.Get, username, null);
             var result = getBlueprintRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
@@ -86,12 +86,12 @@ namespace CorporationWebConnection
 
             var createContractRequest = new WebContracts(WebRequestType.Set, username, tmpCorpWebContract);
             var result = createContractRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
 
         public static bool FinishContract(string username, long id)
@@ -101,12 +101,12 @@ namespace CorporationWebConnection
 
             var createContractRequest = new WebContracts(WebRequestType.Set, username, tmpCorpWebContract, false, false, true);
             var result = createContractRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
 
         public static bool DeleteContract(string username, long id)
@@ -116,12 +116,12 @@ namespace CorporationWebConnection
 
             var createContractRequest = new WebContracts(WebRequestType.Set, username, tmpCorpWebContract, true);
             var result = createContractRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
 
         public static bool AcceptContract(string username, long id, int selectedVolume)
@@ -132,12 +132,12 @@ namespace CorporationWebConnection
 
             var createContractRequest = new WebContracts(WebRequestType.Set, username, tmpCorpWebContract, false, true);
             var result = createContractRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
 
         public static List<CorporationWebContract> GetContracts(string username)
@@ -145,7 +145,7 @@ namespace CorporationWebConnection
             var contracts = new List<CorporationWebContract>();
             var createContractRequest = new WebContracts(WebRequestType.Get, username, null);
             var result = createContractRequest.Request();
-            if (result.Status == WebRequestStatus.Ok)
+            if (result?.Status == WebRequestStatus.Ok)
             {
                 foreach (var contract in result.Contracts)
                     contracts.Add(new CorporationWebContract(contract));
@@ -163,7 +163,7 @@ namespace CorporationWebConnection
         {
             var getBlueprintRequest = new WebBlueprints(WebRequestType.Get, username, null, owner);
             var result = getBlueprintRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
@@ -176,12 +176,12 @@ namespace CorporationWebConnection
             var bp = new CorporationWebBlueprint(id, null, 0, 0, false);
             var setBlueprintRequest = new WebBlueprints(WebRequestType.Set, username, bp, null, true);
             var result = setBlueprintRequest.Request();
-            if (result.Status == WebRequestStatus.Failed)
+            if (result?.Status == WebRequestStatus.Failed)
             {
 
             }
 
-            return result.Status == WebRequestStatus.Ok;
+            return result?.Status == WebRequestStatus.Ok;
         }
     }
 }

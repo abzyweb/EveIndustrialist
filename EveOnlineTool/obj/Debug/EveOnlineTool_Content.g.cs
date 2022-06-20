@@ -8,6 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/blueprints.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/categoryids.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/certificates.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/graphicids.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/groupids.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/iconids.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/skinlicenses.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/skinmaterials.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/skins.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/tournamentrulesets.yaml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/old/typeids.yaml")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/blueprints.yaml")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/categoryids.yaml")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sde/fsd/certificates.yaml")]

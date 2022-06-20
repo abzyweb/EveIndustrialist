@@ -12,7 +12,8 @@ namespace CorporationWebConnection.WebCommunication.Operations
 {
     public abstract class Operation<T>
     {
-        protected string BaseUrl { get; set; } = @"http://yourUrlHere.com";
+        // protected string BaseUrl { get; set; } = @"http://yourUrlHere.com";
+        protected string BaseUrl { get; set; } = @"http://www.mobilies.at/EveOnline/";
         protected string OperationUri
         {
             get { return BaseUrl + OperationPath; }

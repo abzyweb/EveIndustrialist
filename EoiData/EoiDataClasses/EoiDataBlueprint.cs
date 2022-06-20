@@ -29,6 +29,7 @@ namespace EoiData.EoiDataClasses
 
         private List<EsiDataMarketOrders> _esiMarketOrders = new List<EsiDataMarketOrders>();
         private List<RawEsiCharacterMarketOrderEntry> _characterOrders = new List<RawEsiCharacterMarketOrderEntry>();
+        private bool _ignorePropertyChanged;
 
         public List<EoiDataType> Products { get; set; }
         public List<EoiDataType> Materials { get; set; }
@@ -183,6 +184,22 @@ namespace EoiData.EoiDataClasses
             return updated;
         }
 
+        internal void UpdateBlueprintEfficencies()
+        {
+            if (_fileSystemBlueprint != null)
+                return;
+
+            _ignorePropertyChanged = true;
+
+            if (_eoiBlueprint.MaterialEfficency != SettingsInterface.GlobalSettings.NotOwnedMe)
+                _eoiBlueprint.MaterialEfficency = SettingsInterface.GlobalSettings.NotOwnedMe;
+
+            if (_eoiBlueprint.TimeEfficency != SettingsInterface.GlobalSettings.NotOwnedTe)
+                _eoiBlueprint.TimeEfficency = SettingsInterface.GlobalSettings.NotOwnedTe;
+
+            _ignorePropertyChanged = false;
+        }
+
         internal List<EsiDataMarketOrders> GetMarketPrices()
         {
             return _esiMarketOrders;
@@ -225,7 +242,8 @@ namespace EoiData.EoiDataClasses
             if (_fileSystemBlueprint == null)
                 _fileSystemBlueprint = FileSystemDataInterface.CreateBlueprint(this.Id);
 
-            if (_fileSystemBlueprint.MaterialEfficency != blueprint.MaterialEfficency)
+            if (_fileSystemBlueprint.MaterialEfficency != blueprint.MaterialEfficency ||
+                _eoiBlueprint.MaterialEfficency != blueprint.MaterialEfficency)
             {
                 _fileSystemBlueprint.MaterialEfficency = blueprint.MaterialEfficency;
 
@@ -235,7 +253,8 @@ namespace EoiData.EoiDataClasses
                 updated = true;
             }
 
-            if (_fileSystemBlueprint.TimeEfficency != blueprint.TimeEfficency)
+            if (_fileSystemBlueprint.TimeEfficency != blueprint.TimeEfficency ||
+                _eoiBlueprint.TimeEfficency != blueprint.TimeEfficency)
             {
                 _fileSystemBlueprint.TimeEfficency = blueprint.TimeEfficency;
 
@@ -374,6 +393,9 @@ namespace EoiData.EoiDataClasses
 
         private void EoiBlueprint_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
+            if (_ignorePropertyChanged)
+                return;
+
             if (e.PropertyName == nameof(EoiBlueprint.Private))
             {
                 if (_fileSystemBlueprint == null)
@@ -423,7 +445,8 @@ namespace EoiData.EoiDataClasses
             _eoiBlueprint.Name = _staticBlueprint.Name;
             _eoiBlueprint.Owned = this.Owned;
             _eoiBlueprint.Inventable = this.Parent?.Owned == true;
-
+            _eoiBlueprint.HasParent = this.Parent != null;
+            
             _eoiBlueprint.Materials.Clear();
             foreach (var material in GetEoiMaterials())
                 _eoiBlueprint.Materials.Add(material);
@@ -463,6 +486,27 @@ namespace EoiData.EoiDataClasses
             }
             else
                 _eoiBlueprint.Price = 0;
+
+            var parentMarketPrices = this.Parent?.GetMarketPrices();
+            if (parentMarketPrices != null)
+            {
+                var esiMarketOrders = parentMarketPrices.FirstOrDefault(x => x.Region == region);
+                if (esiMarketOrders != null)
+                {
+                    if (esiMarketOrders.Orders.Any(x => !x.is_buy_order))
+                    {
+
+                        _eoiBlueprint.ParentPrice = esiMarketOrders.Orders.Where(x => !x.is_buy_order).Min(x => x.price);
+                    }
+                    else
+                        _eoiBlueprint.ParentPrice = 0;
+                }
+                else
+                    _eoiBlueprint.ParentPrice = 0;
+            }
+            else
+                _eoiBlueprint.ParentPrice = 0;
+           
 
             _eoiBlueprint.PropertyChanged += EoiBlueprint_PropertyChanged;
         }
@@ -551,7 +595,11 @@ namespace EoiData.EoiDataClasses
         internal void UpdateInventable()
         {
             if (_eoiBlueprint != null)
+            {
                 _eoiBlueprint.Inventable = this.Parent?.Owned == true;
+                _eoiBlueprint.HasParent = this.Parent != null;
+            }
+                
         }
     }
 }

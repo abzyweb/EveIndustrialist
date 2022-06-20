@@ -26,5 +26,3 @@ C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.csproj.C
 C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.csproj.CopyComplete
 C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.dll
 C:\Users\DBA.MILKI\source\repos\EveOnlineTool\EoiData\obj\Debug\EoiData.pdb
-C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EoiData.dll.CodeAnalysisLog.xml
-C:\Users\Daniel\Documents\Visual Studio 2017\Projects\EveOnlineTool\EoiData\bin\Debug\EoiData.dll.lastcodeanalysissucceeded

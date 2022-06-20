@@ -13,13 +13,14 @@ namespace EoiData.Settings
         public bool EnableMarketerUpdates { get; set; } = true;
         public bool EnableMarketHistoryUpdates { get; set; } = false;
         public bool EnableEsiBlueprintsUpdates { get; set; } = true;
-        public bool EnableCorporationBlueprintsUpdates { get; set; } = true;
-        public bool EnableCorporationContractsUpdates { get; set; } = true;
+        public bool EnableCorporationBlueprintsUpdates { get; set; } = false;
+        public bool EnableCorporationContractsUpdates { get; set; } = false;
 
         public decimal SaleTax { get; set; } = 1.4m;
         public decimal BrokerFee { get; set; } = 2.55m;
         public decimal IndustryTax { get; set; } = 2;
-        public string CorporationServer { get; set; } = @"http://yourUrlHere.com/EveOnline/";
+        // public string CorporationServer { get; set; } = @"http://yourUrlHere.com/EveOnline/";
+        public string CorporationServer { get; set; } = @"http://www.mobilies.at/EveOnline/";
         
         public decimal StructureTaxBonus { get; set; } = 4;
         public decimal ProfitPerHourForPrice { get; set; }

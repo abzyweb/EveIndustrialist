@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vB2ZQ8ywuVq9IPNRxQysjiBk5B6vQpZJbKlMFhGIJXA=</dsig:DigestValue>
+        <dsig:DigestValue>kfAiB6cHXgmUMnZeVYLRdDfz1hL7sdaKAGkPK2eWzIQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -102,38 +102,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EoiData.dll" size="134144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EoiData.dll" size="137728">
       <assemblyIdentity name="EoiData" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Qg8XBH3L8FKWCnVi3c40RcUKqJ8BlFZxi9+J1LXvs3E=</dsig:DigestValue>
+        <dsig:DigestValue>eu7GcwC6PD680xwUPVV0jnuCT8kU1QPjp21WvmPmcGA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EveOnlineTool.exe" size="145920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EveOnlineTool.exe" size="148480">
       <assemblyIdentity name="EveOnlineTool" version="0.1.19.525" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>vMHOumtpME5pD5eJLucxM2N7pA2CD1YU3I9NuwyDpCo=</dsig:DigestValue>
+        <dsig:DigestValue>f84w6TclyuEp/yKFlL2c3MxJOglXm24TIDiuTJRw8O8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EveSwaggerConnection.dll" size="49152">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EveSwaggerConnection.dll" size="49664">
       <assemblyIdentity name="EveSwaggerConnection" version="0.1.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yJ8dTDMd+BJpmxiM9g/+NUjNVSns7yyE6f4zQg18gWo=</dsig:DigestValue>
+        <dsig:DigestValue>SYn2Kp57l6Ur9Kn+c7gFklQrIApKI8fQZQotuSH1oGc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -210,6 +210,105 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>XTOFz1Irsx5Xhz9ozyCx/51psk8+wEnY7e6C9n7+hd4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\blueprints.yaml" size="4979877">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>icqqrdt0eJQs/8N9bLly8txSRM75IV5Um/CXTlKUhA8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\categoryIDs.yaml" size="8333">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Jm4gAaBLF9QEKrplb9yFVWKiPmIJ64/4355wWvUqOL0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\certificates.yaml" size="201025">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xwBBwF9CUYSgyjP5XbV6/ZkPI8IkyFrbZC/IhbiDTSY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\graphicIDs.yaml" size="757770">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6qltDw/hSan0wAoCVYkvPS3QbBl96OOGZL0Tu81Qjto=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\groupIDs.yaml" size="611741">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BFr3JBMubFTG5tgpuu/Z0o1CCqDcDXVYKzvvwyYyzO0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\iconIDs.yaml" size="374483">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XTOFz1Irsx5Xhz9ozyCx/51psk8+wEnY7e6C9n7+hd4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\skinLicenses.yaml" size="592705">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DOXVRasD7nOat5bYfoNNLeL3J1W8Z/j//MwLitE3ei8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\skinMaterials.yaml" size="23281">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CNGTlIadWApI3L8Ltd+GQCn6Xk1C8Ex0FFX6e7qlfXM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\skins.yaml" size="753618">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1Vm70K2KXbwcgY+utlecPIkNeXYngdXrM37pZ01ntYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\tournamentRuleSets.yaml" size="22731">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tYQX72AY/KiSU9i0gFAn29VeEkF/kgUOyzI6OOwFaC0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sde\fsd\old\typeIDs.yaml" size="76301745">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+nmtqDvP5KViDfcI1xH3/9v+4jQefvMV4h3R6D+cfiI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="sde\fsd\skinLicenses.yaml" size="592705">
